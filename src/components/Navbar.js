@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "../Styles/Navbar.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const handleCollapsed = () => setIsCollapsed(!isCollapsed);
   return (
-    <div>
+    <div className="mt-5">
       <nav
         className={`${styles.nav} navbar navbar-expand-md navbar-dark bg-dark fixed-top`}
       >
@@ -43,6 +44,11 @@ const Navbar = () => {
                 <a className="nav-link" href="#about">
                   About
                 </a>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/auth">
+                  Sign Up
+                </Link>
               </li>
             </ul>
           </div>
