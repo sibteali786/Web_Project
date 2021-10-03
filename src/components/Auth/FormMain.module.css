@@ -1,0 +1,8 @@
+.vertical {
+  border-right: 1px solid grey;
+}
+@media (max-width: 1218px) {
+  .vertical {
+    border: none;
+  }
+}
