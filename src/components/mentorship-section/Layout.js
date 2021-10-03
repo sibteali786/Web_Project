@@ -5,7 +5,7 @@ import SectionText from "./SectionText";
 
 const Layout = () => {
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid p-0" style={{ marginTop: "60px" }}>
       <Header />
       <SectionText />
       <div className="px-3 px-sm-4 px-md-5 pb-5 text-center">
