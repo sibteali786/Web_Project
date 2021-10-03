@@ -1,7 +1,48 @@
 .nav {
-  height: 70px;
+  height: 80px;
 }
 
 .logo {
-  transform: scale(0.4);
+  /* transform: scale(0.4); */
+  height: 60px;
+}
+
+.mobileNav {
+  height: 100vh;
+  width: 100%;
+  background: #212529;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.hidden {
+  display: none;
+}
+.mobileNav a {
+  text-decoration: none;
+  color: honeydew;
+  margin: 2rem 0;
+  font-size: clamp(2rem, 5vh, 4rem);
+  transition: transform 0.5s ease-in-out;
+}
+.mobileNav a:hover {
+  color: rgb(204, 211, 204);
+  transform: scale(1.2);
+}
+
+.listDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.desktopList {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .desktopList {
+    display: none;
+  }
 }

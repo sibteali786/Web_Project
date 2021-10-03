@@ -10,6 +10,14 @@ const Navbar = () => {
         className={`${styles.nav} navbar navbar-expand-md navbar-dark bg-dark fixed-top`}
       >
         <div className="container-fluid">
+          <span className="navbar-brand" href="#">
+            <img
+              src={require("../Images/final_copy.svg").default}
+              alt="logo"
+              className={`${styles.logo} img-fluid`}
+            />
+          </span>
+          x
           <button
             className="navbar-toggler"
             type="button"
@@ -17,17 +25,7 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <span className="navbar-brand" href="#">
-            <img
-              src={require("../Imgaes/final_copy.svg").default}
-              alt="logo"
-              className={`${styles.logo} img-fluid`}
-            />
-          </span>
-          <div
-            className={`${isCollapsed ? "collapse" : ""} navbar-collapse`}
-            id="navmenu"
-          >
+          <div className={`${styles.desktopList}`}>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#home">
@@ -48,6 +46,21 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <div className={`${isCollapsed ? styles.mobileNav : styles.hidden}`}>
+        <ul className={`mx-auto ${styles.listDisplay}`}>
+          <a className=" " aria-current="page" href="#home">
+            Home
+          </a>
+
+          <a className="" href="#feature">
+            Features
+          </a>
+
+          <a className="" href="#about">
+            About
+          </a>
+        </ul>
+      </div>
     </div>
   );
 };
