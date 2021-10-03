@@ -1,0 +1,23 @@
+import Header from "./Header";
+import SectionText from "./SectionText";
+
+const Layout = () => {
+  return (
+    <div className="container-fluid p-0">
+      <Header />
+      <SectionText />
+      <div className="p-5 text-center">
+        <h1>Our Student Mentor Program</h1>
+        <p className="py-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere
+          quasi earum aspernatur vitae, cupiditate nulla deserunt dolorem ipsam
+          officia maiores natus architecto repellendus, sed voluptatibus. Dolore
+          earum quos itaque id velit natus, rerum aliquid inventore repudiandae.
+          Rerum, harum fuga?
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Layout;
