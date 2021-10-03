@@ -1,5 +1,6 @@
 import Form from "./Form";
 import Header from "./Header";
+import MentorProfilesGrid from "./MentorProfilesGrid";
 import SectionText from "./SectionText";
 
 const Layout = () => {
@@ -7,7 +8,7 @@ const Layout = () => {
     <div className="container-fluid p-0">
       <Header />
       <SectionText />
-      <div className="p-5 text-center">
+      <div className="px-3 px-sm-4 px-md-5 pb-5 text-center">
         <h1>Our Student Mentor Program</h1>
         <p className="py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere
@@ -18,6 +19,7 @@ const Layout = () => {
         </p>
       </div>
       <Form />
+      <MentorProfilesGrid />
     </div>
   );
 };

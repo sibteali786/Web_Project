@@ -12,7 +12,7 @@ const SectionText = () => {
         </p>
         <button className="btn mx-auto w-50 btn-dark">Find Your Mentor</button>
       </div>
-      <div className="col-md-4 section-body-image"></div>
+      <div className="col-md-4 section-body-image my-5 my-md-0"></div>
     </div>
   );
 };

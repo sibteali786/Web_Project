@@ -21,3 +21,12 @@
     cover;
   height: 400px;
 }
+
+.avatar {
+  background: url("./assets/avatar-sample.jpg") no-repeat center center / cover;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: rgb(255, 208, 0);
+}
