@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" width="205.3" height="205.3" data-name="Layer 1" viewBox="0 0 205.3 205.3">
+  <defs>
+    <clipPath id="clip-path" transform="translate(0.1)">
+      <rect width="209.6" height="296.5" x="-3.6" y="-25.5" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-2" transform="translate(0.1)">
+      <path d="M80 77c32 20 19 78 19 78l34-102c-13 34-53 24-53 24m53-24a17 17 0 0 1 1-2 20 20 0 0 0-1 2" style="fill:url(#linear-gradient)"/>
+    </clipPath>
+    <clipPath id="clip-path-3" transform="translate(0.1)">
+      <path d="M97 156s20-76-40-85c6 1 31 11 40 85M57 71l-1-1 1 1" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-4" transform="translate(0.1)">
+      <path d="M96 40a17 17 0 1 0 5-1 15 15 0 0 0-5 1" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-5" transform="translate(0.1)">
+      <path d="M122 122a11 11 0 0 0-2 5c0 3-2 14-11 21 0 0 4-10 0-13a93 93 0 0 1-6 11c-3 6-3 21-3 21s26-11 24-47l-2 2" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-6" transform="translate(0.1)">
+      <path d="M96 167s1-15-2-20a87 87 0 0 1-6-12c-4 3 0 13 0 13-9-7-11-18-11-21a11 11 0 0 0-2-5l-3-3c-2 37 24 47 24 47" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-7" transform="translate(0.1)">
+      <path d="M119 47a14 14 0 0 1 1 2l21-11a236 236 0 0 0-22 9" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-8" transform="translate(0.1)">
+      <path d="M121 52v2l13-4a125 125 0 0 0-14 2" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-9" transform="translate(0.1)">
+      <path d="m71 71 13-5-1-1a4 4 0 0 1 0-1l-12 6" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-10" transform="translate(0.1)">
+      <path d="M58 65a244 244 0 0 0 24-4v-2l-24 6" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-11" transform="translate(0.1)">
+      <path d="M68 55a131 131 0 0 0 13 1l1-2h-4l-10 1" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-12" transform="translate(0.1)">
+      <path d="M82 52a3 3 0 0 1 0-1l1-1a241 241 0 0 0-24-6 234 234 0 0 0 23 8" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-13" transform="translate(0.1)">
+      <path d="M84 47a10 10 0 0 1 1-1 120 120 0 0 0-13-7l12 8" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-14" transform="translate(0.1)">
+      <path d="m78 35 8 8h1l1-1-18-16 8 9" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-15" transform="translate(0.1)">
+      <path d="M90 40h1l1-1a128 128 0 0 0-9-11l7 12" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-16" transform="translate(0.1)">
+      <path d="m94 38 1-1h1c-2-8-5-15-9-23a236 236 0 0 0 7 24" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-17" transform="translate(0.1)">
+      <path d="M99 37h2l-1-14-1 14" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-18" transform="translate(0.1)">
+      <path d="M104 36h1l1 1 3-25-5 24" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-19" transform="translate(0.1)">
+      <path d="M108 38h1l1 1 5-13-7 12" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-20" transform="translate(0.1)">
+      <path d="m112 40 1 1h1l14-20a237 237 0 0 0-16 19" style="fill:none"/>
+    </clipPath>
+    <clipPath id="clip-path-21" transform="translate(0.1)">
+      <path d="m116 43 1 2a128 128 0 0 0 10-10l-11 8" style="fill:none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="-182.6" cy="640.9" r=".3" gradientTransform="matrix(97.16, 0, 0, -97.16, 17821.94, 62384.37)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edc70a"/>
+      <stop offset=".4" stop-color="#edc50b"/>
+      <stop offset=".6" stop-color="#eebe0f"/>
+      <stop offset=".7" stop-color="#f0b115"/>
+      <stop offset=".8" stop-color="#f29f1e"/>
+      <stop offset=".9" stop-color="#f48829"/>
+      <stop offset="1" stop-color="#f67a30"/>
+    </radialGradient>
+    <radialGradient xlink:href="#radial-gradient" id="radial-gradient-2" cx="-183.2" cy="639.6" r=".3" gradientTransform="matrix(49.84, 0, 0, -49.84, 9230.19, 31932.78)"/>
+    <radialGradient id="radial-gradient-3" cx="-183.6" cy="642.6" r=".3" gradientTransform="matrix(53.09, 0, 0, -53.09, 9857.48, 34256.76)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edc70a"/>
+      <stop offset=".2" stop-color="#eec10d"/>
+      <stop offset=".5" stop-color="#efb214"/>
+      <stop offset=".7" stop-color="#f39821"/>
+      <stop offset="1" stop-color="#f67a30"/>
+    </radialGradient>
+    <radialGradient xlink:href="#radial-gradient-3" id="radial-gradient-4" cx="-182.6" cy="642.6" r=".3" gradientTransform="matrix(53.09, 0, 0, -53.09, 9777.45, 34256.76)"/>
+    <radialGradient id="radial-gradient-5" cx="-185.5" cy="638.1" r=".3" gradientTransform="matrix(25.36, 0, 0, -25.36, 4835.21, 16225.34)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edc70a"/>
+      <stop offset="0" stop-color="#edc50c"/>
+      <stop offset="0" stop-color="#efbf13"/>
+      <stop offset="0" stop-color="#f2b51e"/>
+      <stop offset="0" stop-color="#f6a72f"/>
+      <stop offset="0" stop-color="#f6a630"/>
+      <stop offset=".9" stop-color="#f6a630"/>
+      <stop offset="1" stop-color="#f6a630"/>
+    </radialGradient>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-6" cx="-187.2" cy="637.7" r=".3" gradientTransform="matrix(14.23, 0, 0, -14.23, 2791.32, 9124.23)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-7" cx="-180.8" cy="639.7" r=".3" gradientTransform="matrix(14.63, 0, 0, -14.63, 2723.19, 9427.12)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-8" cx="-181.2" cy="639.5" r=".3" gradientTransform="matrix(24.96, 0, 0, -24.96, 4592.14, 16025.54)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-9" cx="-180.4" cy="638.1" r=".3" gradientTransform="matrix(14.04, 0, 0, -14.04, 2606.85, 9012.71)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-10" cx="-181.2" cy="638.4" r=".3" gradientTransform="matrix(25.11, 0, 0, -25.11, 4621.45, 16080.15)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-11" cx="-181" cy="636.7" r=".3" gradientTransform="matrix(14.73, 0, 0, -14.73, 2744.26, 9420.66)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-12" cx="-181.8" cy="637.5" r=".3" gradientTransform="matrix(25.56, 0, 0, -25.56, 4725.2, 16326.56)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-13" cx="-182.1" cy="635.5" r=".3" gradientTransform="matrix(14.73, 0, 0, -14.73, 2770.54, 9395.81)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-14" cx="-182.8" cy="636.8" r=".3" gradientTransform="matrix(25.2, 0, 0, -25.2, 4697.55, 16075.91)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-15" cx="-183.7" cy="634.8" r=".3" gradientTransform="matrix(13.99, 0, 0, -13.99, 2670.15, 8912.85)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-16" cx="-183.8" cy="636.7" r=".3" gradientTransform="matrix(24.94, 0, 0, -24.94, 4690.61, 15905.72)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-17" cx="-185.1" cy="635.2" r=".3" gradientTransform="matrix(14.56, 0, 0, -14.56, 2807.44, 9282.65)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-18" cx="-184.8" cy="637.2" r=".3" gradientTransform="matrix(25.55, 0, 0, -25.55, 4842.71, 16314.92)"/>
+    <radialGradient xlink:href="#radial-gradient-5" id="radial-gradient-19" cx="-186.4" cy="636.3" r=".3" gradientTransform="matrix(14.78, 0, 0, -14.78, 2875.88, 9442.6)"/>
+    <linearGradient id="linear-gradient" x1="79.6" x2="133.5" y1="103.1" y2="103.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edc70a"/>
+      <stop offset=".1" stop-color="#edc50b"/>
+      <stop offset=".1" stop-color="#edc40b"/>
+      <stop offset=".3" stop-color="#edc10c"/>
+      <stop offset=".4" stop-color="#efb811"/>
+      <stop offset=".4" stop-color="#f0ac17"/>
+      <stop offset=".6" stop-color="#f1a31c"/>
+      <stop offset=".9" stop-color="#f48928"/>
+      <stop offset="1" stop-color="#f67a30"/>
+    </linearGradient>
+    <linearGradient xlink:href="#linear-gradient" id="linear-gradient-3" x1="-183.3" x2="-182.9" y1="640.6" y2="640.6" gradientTransform="matrix(118.19, 0, 0, -118.19, 21747.94, 75810.39)"/>
+  </defs>
+  <g style="clip-path:url(#clip-path)">
+    <path d="M205 103A103 103 0 1 1 103 0a103 103 0 0 1 102 103" style="fill:#211f1f" transform="translate(0.1)"/>
+  </g>
+  <path d="M80 77c32 20 19 78 19 78l34-102c-13 34-53 24-53 24m53-24a17 17 0 0 1 1-2 20 20 0 0 0-1 2" style="fill:url(#linear-gradient)" transform="translate(0.1)"/>
+  <g style="clip-path:url(#clip-path-2)">
+    <rect width="53.9" height="104.7" x="79.7" y="50.8" style="fill:url(#linear-gradient-3)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-3)">
+    <rect width="61.5" height="85.8" x="55.8" y="70.4" style="fill:url(#radial-gradient)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-4)">
+    <rect width="39" height="37" x="81.5" y="39.3" style="fill:url(#radial-gradient-2)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-5)">
+    <rect width="26.7" height="47" x="99.8" y="119.5" style="fill:url(#radial-gradient-3)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-6)">
+    <rect width="26.7" height="47" x="70.5" y="119.5" style="fill:url(#radial-gradient-4)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-7)">
+    <rect width="22.6" height="11.3" x="118.8" y="37.5" style="fill:url(#radial-gradient-5)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-8)">
+    <rect width="13.7" height="3.6" x="120.6" y="49.9" style="fill:url(#radial-gradient-6)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-9)">
+    <rect width="12.9" height="6.7" x="70.9" y="63.8" style="fill:url(#radial-gradient-7)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-10)">
+    <rect width="24.2" height="5.8" x="58" y="59.3" style="fill:url(#radial-gradient-8)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-11)">
+    <rect width="13.8" height="2" x="67.8" y="54.4" style="fill:url(#radial-gradient-9)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-12)">
+    <rect width="23.8" height="7.8" x="58.9" y="43.9" style="fill:url(#radial-gradient-10)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-13)">
+    <rect width="12.4" height="7.8" x="72.4" y="39.3" style="fill:url(#radial-gradient-11)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-14)">
+    <rect width="18.3" height="17.8" x="69.6" y="25.6" style="fill:url(#radial-gradient-12)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-15)">
+    <rect width="8.1" height="12.2" x="83.7" y="27.8" style="fill:url(#radial-gradient-13)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-16)">
+    <rect width="8.6" height="23.6" x="87.5" y="14.3" style="fill:url(#radial-gradient-14)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-17)">
+    <rect width="2.1" height="13.8" x="99" y="23" style="fill:url(#radial-gradient-15)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-18)">
+    <rect width="5" height="24.3" x="103.8" y="12.4" style="fill:url(#radial-gradient-16)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-19)">
+    <rect width="6.4" height="13" x="108.4" y="25.6" style="fill:url(#radial-gradient-17)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-20)">
+    <rect width="15.6" height="20.1" x="112.5" y="21.1" style="fill:url(#radial-gradient-18)"/>
+  </g>
+  <g style="clip-path:url(#clip-path-21)">
+    <rect width="11.3" height="9.4" x="116.2" y="35.3" style="fill:url(#radial-gradient-19)"/>
+  </g>
+</svg>

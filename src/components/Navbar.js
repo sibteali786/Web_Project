@@ -18,7 +18,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <span className="navbar-brand" href="#">
-            Navbar
+            <img src={require("../Imgaes/final_copy.svg").default} alt="logo" />
           </span>
           <div
             className={`${isCollapsed ? "collapse" : ""} navbar-collapse`}

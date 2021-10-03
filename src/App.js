@@ -3,7 +3,7 @@ import Layout from "./components/mentorship-section/Layout";
 import Home from "./Pages/Home";
 const App = () => {
   return (
-    <div>
+    <div style={{ fontFamily: "Lato" }}>
       <Home />
       <Layout />
     </div>
