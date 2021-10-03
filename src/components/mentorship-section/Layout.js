@@ -1,3 +1,4 @@
+import Form from "./Form";
 import Header from "./Header";
 import SectionText from "./SectionText";
 
@@ -16,6 +17,7 @@ const Layout = () => {
           Rerum, harum fuga?
         </p>
       </div>
+      <Form />
     </div>
   );
 };
