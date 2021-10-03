@@ -30,3 +30,12 @@
   border: 3px solid;
   border-color: rgb(255, 208, 0);
 }
+
+.profile-image {
+  background: url("./assets/avatar-sample.jpg") no-repeat center center / cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: rgb(255, 208, 0);
+}
