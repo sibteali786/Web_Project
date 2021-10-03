@@ -18,7 +18,11 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <span className="navbar-brand" href="#">
-            <img src={require("../Imgaes/final_copy.svg").default} alt="logo" />
+            <img
+              src={require("../Imgaes/final_copy.svg").default}
+              alt="logo"
+              className={`${styles.logo} img-fluid`}
+            />
           </span>
           <div
             className={`${isCollapsed ? "collapse" : ""} navbar-collapse`}

@@ -7,7 +7,7 @@ const App = () => {
     <div style={{ fontFamily: "Lato" }}>
       <Home />
       <Layout />
-      {/* <ProfilePage /> */}
+      <ProfilePage />
     </div>
   );
 };
