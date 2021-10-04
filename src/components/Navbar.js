@@ -3,9 +3,10 @@ import styles from "../Styles/Navbar.module.css";
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import AuthContext from "../Store/Auth-Context";
+import { Fragment } from "react";
 const Navbar = () => {
   const history = useHistory();
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const handleCollapsed = () => setIsCollapsed(!isCollapsed);
   const AuthCtx = useContext(AuthContext);
   const isLoggedIn = AuthCtx.isLoggedin;
@@ -14,12 +15,12 @@ const Navbar = () => {
     history.replace("/");
   };
   return (
-    <div className="mt-5">
+    <Fragment className="mt-5">
       <nav
-        className={`${styles.nav} navbar navbar-expand-md navbar-dark bg-dark fixed-top`}
+        className={`${styles.nav} navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow`}
       >
         <div className="container-fluid">
-          <span className="navbar-brand" href="#">
+          <span className="navbar-brand ms-3" href="#">
             <img
               src={require("../Images/final_copy.svg").default}
               alt="logo"
@@ -84,7 +85,7 @@ const Navbar = () => {
           </a>
         </ul>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
