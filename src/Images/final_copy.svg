@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 1" viewBox="0 0 85.6 154.1">
+  <defs>
+    <clipPath id="e">
+      <path d="M24 65c33 20 19 78 19 78L77 40C64 75 24 65 24 65m53-25 1-2-1 2" style="fill:url(#a)"/>
+    </clipPath>
+    <clipPath id="g">
+      <path d="M42 144S62 67 1 58c6 2 31 11 41 86M1 58H0h1" style="fill:none"/>
+    </clipPath>
+    <clipPath id="h">
+      <path d="M41 28a17 17 0 1 0 4-1 15 15 0 0 0-4 1" style="fill:none"/>
+    </clipPath>
+    <clipPath id="j">
+      <path d="M66 110a10 10 0 0 0-1 4c-1 4-2 14-12 21 0 0 5-10 0-13a103 103 0 0 1-6 12c-3 6-2 20-2 20s26-11 24-47c0 0-2 0-3 3" style="fill:none"/>
+    </clipPath>
+    <clipPath id="k">
+      <path d="M41 154s0-14-3-20a87 87 0 0 1-6-12c-4 3 0 13 0 13-9-7-11-17-11-21a9 9 0 0 0-2-4l-2-3c-2 36 24 47 24 47" style="fill:none"/>
+    </clipPath>
+    <clipPath id="m">
+      <path d="M63 35a15 15 0 0 1 1 1l22-11-23 10" style="fill:none"/>
+    </clipPath>
+    <clipPath id="n">
+      <path d="M65 39v2l14-3a128 128 0 0 0-14 1" style="fill:none"/>
+    </clipPath>
+    <clipPath id="p">
+      <path d="m15 58 13-5v-1a4 4 0 0 1-1-1 119 119 0 0 0-12 7" style="fill:none"/>
+    </clipPath>
+    <clipPath id="r">
+      <path d="m2 53 24-4v-2a242 242 0 0 0-24 6" style="fill:none"/>
+    </clipPath>
+    <clipPath id="t">
+      <path d="m12 42 14 2a7 7 0 0 1 0-2H12" style="fill:none"/>
+    </clipPath>
+    <clipPath id="v">
+      <path d="M26 39a4 4 0 0 1 1-1v-1a218 218 0 0 0-24-5l23 7" style="fill:none"/>
+    </clipPath>
+    <clipPath id="x">
+      <path d="M28 35a14 14 0 0 1 1-2 120 120 0 0 0-12-6l11 8" style="fill:none"/>
+    </clipPath>
+    <clipPath id="z">
+      <path d="m22 22 9 9v-1l1-1-18-16 8 9" style="fill:none"/>
+    </clipPath>
+    <clipPath id="B">
+      <path d="m34 28 1-1h1l-8-12a128 128 0 0 0 6 13" style="fill:none"/>
+    </clipPath>
+    <clipPath id="D">
+      <path d="m38 26 1-1h1a244 244 0 0 0-8-23l6 24" style="fill:none"/>
+    </clipPath>
+    <clipPath id="F">
+      <path d="M43 24h2a128 128 0 0 0 0-13l-2 13" style="fill:none"/>
+    </clipPath>
+    <clipPath id="H">
+      <path d="M48 24h2l3-24a222 222 0 0 0-5 24" style="fill:none"/>
+    </clipPath>
+    <clipPath id="J">
+      <path d="m53 25 1 1 5-13a118 118 0 0 0-6 12" style="fill:none"/>
+    </clipPath>
+    <clipPath id="L">
+      <path d="M57 28h1v1L72 9 57 28" style="fill:none"/>
+    </clipPath>
+    <clipPath id="N">
+      <path d="m60 31 2 1a128 128 0 0 0 10-9l-12 8" style="fill:none"/>
+    </clipPath>
+    <radialGradient id="b" cx="-238.3" cy="628.5" r=".3" gradientTransform="matrix(97.16, 0, 0, -97.16, 23176.72, 61165.24)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edc70a"/>
+      <stop offset=".4" stop-color="#edc50b"/>
+      <stop offset=".6" stop-color="#eebe0f"/>
+      <stop offset=".7" stop-color="#f0b115"/>
+      <stop offset=".8" stop-color="#f29f1e"/>
+      <stop offset=".9" stop-color="#f48829"/>
+      <stop offset="1" stop-color="#f67a30"/>
+    </radialGradient>
+    <radialGradient xlink:href="#b" id="i" cx="-238.9" cy="627.1" r=".3" gradientTransform="matrix(49.84, 0, 0, -49.84, 11949.68, 31301.4)"/>
+    <radialGradient id="c" cx="-239.2" cy="630.2" r=".3" gradientTransform="matrix(53.09, 0, 0, -53.09, 12757.87, 33585.02)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edc70a"/>
+      <stop offset=".2" stop-color="#eec10d"/>
+      <stop offset=".5" stop-color="#efb214"/>
+      <stop offset=".7" stop-color="#f39821"/>
+      <stop offset="1" stop-color="#f67a30"/>
+    </radialGradient>
+    <radialGradient xlink:href="#c" id="l" cx="-238.3" cy="630.2" r=".3" gradientTransform="matrix(53.09, 0, 0, -53.09, 12677.85, 33585.02)"/>
+    <radialGradient id="d" cx="-241.2" cy="625.7" r=".3" gradientTransform="matrix(25.36, 0, 0, -25.36, 6191.56, 15897.97)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edc70a"/>
+      <stop offset="0" stop-color="#edc50c"/>
+      <stop offset="0" stop-color="#efbf13"/>
+      <stop offset="0" stop-color="#f2b51e"/>
+      <stop offset="0" stop-color="#f6a72f"/>
+      <stop offset="0" stop-color="#f6a630"/>
+      <stop offset=".9" stop-color="#f6a630"/>
+      <stop offset="1" stop-color="#f6a630"/>
+    </radialGradient>
+    <radialGradient xlink:href="#d" id="o" cx="-242.9" cy="625.2" r=".3" gradientTransform="matrix(14.23, 0, 0, -14.23, 3527.79, 8935.12)"/>
+    <radialGradient xlink:href="#d" id="q" cx="-236.5" cy="627.3" r=".3" gradientTransform="matrix(14.63, 0, 0, -14.63, 3482.2, 9232.98)"/>
+    <radialGradient xlink:href="#d" id="s" cx="-236.8" cy="627" r=".3" gradientTransform="matrix(24.96, 0, 0, -24.96, 5926.43, 15703.09)"/>
+    <radialGradient xlink:href="#d" id="u" cx="-236.1" cy="625.7" r=".3" gradientTransform="matrix(14.04, 0, 0, -14.04, 3332.7, 8825.96)"/>
+    <radialGradient xlink:href="#d" id="w" cx="-236.9" cy="626" r=".3" gradientTransform="matrix(25.11, 0, 0, -25.11, 5964.04, 15755.86)"/>
+    <radialGradient xlink:href="#d" id="y" cx="-236.7" cy="624.3" r=".3" gradientTransform="matrix(14.73, 0, 0, -14.73, 3508.61, 9225.32)"/>
+    <radialGradient xlink:href="#d" id="A" cx="-237.5" cy="625.1" r=".3" gradientTransform="matrix(25.56, 0, 0, -25.56, 6092.52, 15996.74)"/>
+    <radialGradient xlink:href="#d" id="C" cx="-237.8" cy="623.1" r=".3" gradientTransform="matrix(14.73, 0, 0, -14.73, 3535.01, 9200.44)"/>
+    <radialGradient xlink:href="#d" id="E" cx="-238.4" cy="624.4" r=".3" gradientTransform="matrix(25.2, 0, 0, -25.2, 6045.13, 15750.5)"/>
+    <radialGradient xlink:href="#d" id="G" cx="-239.3" cy="622.4" r=".3" gradientTransform="matrix(13.99, 0, 0, -13.99, 3393.56, 8726.64)"/>
+    <radialGradient xlink:href="#d" id="I" cx="-239.5" cy="624.3" r=".3" gradientTransform="matrix(24.94, 0, 0, -24.94, 6023.69, 15583.54)"/>
+    <radialGradient xlink:href="#d" id="K" cx="-240.8" cy="622.8" r=".3" gradientTransform="matrix(14.56, 0, 0, -14.56, 3562.53, 9089.38)"/>
+    <radialGradient xlink:href="#d" id="M" cx="-240.5" cy="624.8" r=".3" gradientTransform="matrix(25.55, 0, 0, -25.55, 6209.84, 15985.15)"/>
+    <radialGradient xlink:href="#d" id="O" cx="-242.1" cy="623.9" r=".3" gradientTransform="matrix(14.78, 0, 0, -14.78, 3642.93, 9246.66)"/>
+    <linearGradient id="a" x1="23.9" x2="77.8" y1="90.7" y2="90.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edc70a"/>
+      <stop offset=".1" stop-color="#edc50b"/>
+      <stop offset=".1" stop-color="#edc40b"/>
+      <stop offset=".3" stop-color="#edc10c"/>
+      <stop offset=".4" stop-color="#efb811"/>
+      <stop offset=".4" stop-color="#f0ac17"/>
+      <stop offset=".6" stop-color="#f1a31c"/>
+      <stop offset=".9" stop-color="#f48928"/>
+      <stop offset="1" stop-color="#f67a30"/>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="f" x1="-239" x2="-238.6" y1="628.2" y2="628.2" gradientTransform="matrix(118.19, 0, 0, -118.19, 28273.29, 74330.19)"/>
+  </defs>
+  <path d="M24 65c33 20 19 78 19 78L77 40C64 75 24 65 24 65m53-25 1-2-1 2" style="fill:url(#a)"/>
+  <g style="clip-path:url(#e)">
+    <rect width="53.9" height="104.7" x="23.9" y="38.3" style="fill:url(#f)"/>
+  </g>
+  <g style="clip-path:url(#g)">
+    <rect width="61.5" height="85.8" y="58" style="fill:url(#b)"/>
+  </g>
+  <g style="clip-path:url(#h)">
+    <rect width="39" height="37" x="25.7" y="26.9" style="fill:url(#i)"/>
+  </g>
+  <g style="clip-path:url(#j)">
+    <rect width="26.7" height="47" x="44" y="107.1" style="fill:url(#c)"/>
+  </g>
+  <g style="clip-path:url(#k)">
+    <rect width="26.7" height="47" x="14.7" y="107.1" style="fill:url(#l)"/>
+  </g>
+  <g style="clip-path:url(#m)">
+    <rect width="22.6" height="11.3" x="63" y="25.1" style="fill:url(#d)"/>
+  </g>
+  <g style="clip-path:url(#n)">
+    <rect width="13.7" height="3.6" x="64.8" y="37.5" style="fill:url(#o)"/>
+  </g>
+  <g style="clip-path:url(#p)">
+    <rect width="12.9" height="6.7" x="15.1" y="51.4" style="fill:url(#q)"/>
+  </g>
+  <g style="clip-path:url(#r)">
+    <rect width="24.2" height="5.8" x="2.2" y="46.9" style="fill:url(#s)"/>
+  </g>
+  <g style="clip-path:url(#t)">
+    <rect width="13.8" height="2" x="12" y="41.9" style="fill:url(#u)"/>
+  </g>
+  <g style="clip-path:url(#v)">
+    <rect width="23.8" height="7.8" x="3.1" y="31.5" style="fill:url(#w)"/>
+  </g>
+  <g style="clip-path:url(#x)">
+    <rect width="12.4" height="7.8" x="16.6" y="26.9" style="fill:url(#y)"/>
+  </g>
+  <g style="clip-path:url(#z)">
+    <rect width="18.3" height="17.8" x="13.8" y="13.1" style="fill:url(#A)"/>
+  </g>
+  <g style="clip-path:url(#B)">
+    <rect width="8.1" height="12.2" x="27.8" y="15.4" style="fill:url(#C)"/>
+  </g>
+  <g style="clip-path:url(#D)">
+    <rect width="8.6" height="23.6" x="31.7" y="1.9" style="fill:url(#E)"/>
+  </g>
+  <g style="clip-path:url(#F)">
+    <rect width="2.1" height="13.8" x="43.2" y="10.5" style="fill:url(#G)"/>
+  </g>
+  <g style="clip-path:url(#H)">
+    <rect width="5" height="24.3" x="48" style="fill:url(#I)"/>
+  </g>
+  <g style="clip-path:url(#J)">
+    <rect width="6.4" height="13" x="52.6" y="13.2" style="fill:url(#K)"/>
+  </g>
+  <g style="clip-path:url(#L)">
+    <rect width="15.6" height="20.1" x="56.7" y="8.6" style="fill:url(#M)"/>
+  </g>
+  <g style="clip-path:url(#N)">
+    <rect width="11.3" height="9.4" x="60.4" y="22.9" style="fill:url(#O)"/>
+  </g>
+</svg>
