@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "../Styles/Navbar.module.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import AuthContext from "../Store/Auth-Context";
 const Navbar = () => {
+  const history = useHistory();
   const [isCollapsed, setIsCollapsed] = useState(true);
   const handleCollapsed = () => setIsCollapsed(!isCollapsed);
+  const AuthCtx = useContext(AuthContext);
+  const isLoggedIn = AuthCtx.isLoggedin;
+  const logoutHandler = () => {
+    AuthCtx.logout();
+    history.replace("/");
+  };
   return (
     <div className="mt-5">
       <nav
@@ -45,10 +53,19 @@ const Navbar = () => {
                   About
                 </a>
               </li>
+              {!isLoggedIn && (
+                <li className="nav-item">
+                  <Link className="nav-link" to="/auth">
+                    Log in
+                  </Link>
+                </li>
+              )}
               <li className="nav-item">
-                <Link className="nav-link" to="/auth">
-                  Sign Up
-                </Link>
+                {isLoggedIn && (
+                  <Link className="nav-link" to="#" onClick={logoutHandler}>
+                    Log out
+                  </Link>
+                )}
               </li>
             </ul>
           </div>
