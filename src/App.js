@@ -4,6 +4,8 @@ import ProfilePage from "./components/mentor-profiles/ProfilePage";
 import Layout from "./components/mentorship-section/Layout";
 import Auth from "./Pages/Auth";
 import Home from "./Pages/Home";
+import Pictures from "./Pages/Pictures";
+import Vacancies from "./Pages/Vacancies";
 const App = () => {
   return (
     <Switch>
@@ -16,6 +18,12 @@ const App = () => {
       </Route>
       <Route path="/auth">
         <Auth />
+      </Route>
+      <Route path="/pictures" exact>
+        <Pictures />
+      </Route>
+      <Route path="/pictures/:catType">
+        <Vacancies />
       </Route>
     </Switch>
   );
