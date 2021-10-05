@@ -14,19 +14,29 @@
 }
 .textDiv {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   opacity: 0;
   transition: all 0.25s ease-in-out;
 }
 .textDiv:hover {
   opacity: 1;
   cursor: pointer;
+}
+.tile-num {
+  font-size: 220%;
+  margin-left: 20px;
+}
+.tile-text {
+  font-size: 100%;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }

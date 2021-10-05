@@ -1,32 +1,61 @@
 import React from "react";
-import business from "../Imgaes/business.jpg";
-import economics from "../Imgaes/economics.jpg";
-import medicine from "../Imgaes/medicine.jpg";
-import cs from "../Imgaes/ComputerScience.jpg";
+import business from "../Imgaes/socialMediaManager.jpg";
+import economics from "../Imgaes/ambassador.jpg";
+import medicine from "../Imgaes/financeDirector.webp";
+import cs from "../Imgaes/phsycologists.jpg";
+import imgTemp from "../Imgaes/careerCounsellor.jpg";
+import imgTemp2 from "../Imgaes/mentorship.jpeg";
 import "./Pictures.css";
 import { useHistory } from "react-router";
-import { Link } from "react-router-dom";
 const Pictures = () => {
   const history = useHistory();
   const data = [
     {
       img: business,
-      copy: "entrepreneurship",
+      copy: {
+        tileNum: "06",
+        tileText: "Social Media Manager",
+      },
       altText: "person giving talk",
     },
     {
       img: economics,
-      copy: "Economics",
+      copy: {
+        tileNum: "09",
+        tileText: "Campus Ambassador",
+      },
       altText: "Economic diagram",
     },
     {
       img: medicine,
-      copy: "medicine",
+      copy: {
+        tileNum: "12",
+        tileText: "Finance Director",
+      },
       altText: "medical toolkit",
     },
     {
       img: cs,
-      copy: "Computer Science",
+      copy: {
+        tileNum: "02",
+        tileText: "psychologists",
+      },
+      altText: "screen showing code",
+    },
+    {
+      img: imgTemp,
+      copy: {
+        tileNum: "05",
+        tileText: "Career Counsellors",
+      },
+      altText: "screen showing code",
+    },
+    {
+      img: imgTemp2,
+      copy: {
+        tileNum: "10",
+        tileText: "Mentors",
+      },
       altText: "screen showing code",
     },
   ];
@@ -35,7 +64,7 @@ const Pictures = () => {
   };
   return (
     <div className="container mt-5 pt-5 margin-left-0 d-flex flex-column justify-content-center align-items-center">
-      <h2 className="text-center display-5 mb-5">CATEGORIES</h2>
+      <h2 className="text-center display-5 mb-5">CAREERS</h2>
       <div className="row  d-flex justify-content-around">
         {data.map((obj, index) => {
           return (
@@ -46,7 +75,10 @@ const Pictures = () => {
               onClick={handler}
             >
               <div className="textDiv">
-                <div>{obj.copy.toUpperCase()}</div>
+                <div className="tile-num">{obj.copy.tileNum}</div>
+                <div className="tile-text">
+                  {obj.copy.tileText.toUpperCase()}
+                </div>
               </div>
               <img
                 src={obj.img}
