@@ -1,0 +1,77 @@
+.collab-img {
+  /* width: 100%;
+  height: auto; */
+  object-fit: cover;
+  filter: brightness(50%);
+  width: 100%;
+}
+.collab-div {
+  overflow: hidden;
+  max-height: 600px;
+}
+.collab-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-inline: 30%;
+}
+.collab-text {
+  font-style: italic;
+  font-family: "Lato";
+  font-size: 120%;
+}
+.collab-heading {
+  position: relative;
+}
+.collab-heading::after {
+  position: absolute;
+  margin-top: 10px;
+  content: "";
+  display: block;
+  background-color: ivory;
+  width: 75px;
+  height: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 514px) {
+  .collab-text {
+    font-size: 14px;
+  }
+  .someText2 {
+    display: none;
+  }
+  .collab-main {
+    padding-inline: 20%;
+    justify-content: center;
+  }
+}
+@media (min-width: 970px) {
+  .collab-text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1100px) {
+  .collab-text {
+    font-size: 20px;
+    font-family: "Lato";
+  }
+  .collab-main {
+    padding-inline: 30%;
+    justify-content: center;
+  }
+  .someText2 {
+    display: block;
+  }
+  .collab-heading {
+    font-family: "Lato";
+  }
+}
