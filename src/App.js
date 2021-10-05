@@ -5,6 +5,7 @@ import Layout from "./components/mentorship-section/Layout";
 import Auth from "./Pages/Auth";
 import Collaboration from "./Pages/Collaboration";
 import Home from "./Pages/Home";
+import PersonalDev from "./Pages/PersonalDev";
 import Pictures from "./Pages/Pictures";
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
       </Route>
       <Route path="/collaboration">
         <Collaboration />
+      </Route>
+      <Route path="/personalDev">
+        <PersonalDev />
       </Route>
     </Switch>
   );

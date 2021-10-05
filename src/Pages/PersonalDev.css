@@ -1,10 +1,21 @@
-.catImages {
+.personal-heading {
+  font-size: 206%;
+  margin-top: 97px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.personal-text {
+  padding-inline: 25%;
+  font-family: "Lato";
+  font-size: 130%;
+}
+.courseImages {
   object-fit: cover;
   width: 100%;
   height: auto;
   display: block;
 }
-.catDivs {
+.courseDivs {
   padding: 0;
   position: relative;
   font-family: "Lato";
@@ -12,7 +23,7 @@
   font-weight: 300;
   margin: 10px;
 }
-.textDiv {
+.courseTextDiv {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -22,20 +33,20 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   transition: all 0.25s ease-in-out;
 }
-.textDiv:hover {
+.courseTextDiv:hover {
   opacity: 1;
   cursor: pointer;
 }
-.tile-num {
-  font-size: 220%;
+.course-tile-num {
+  font-size: 150%;
   margin-left: 20px;
 }
-.tile-text {
+.course-tile-text {
   font-size: 100%;
   margin-left: 20px;
   margin-bottom: 10px;
