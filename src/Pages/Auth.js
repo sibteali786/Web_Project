@@ -4,10 +4,7 @@ import Navbar from "../components/Navbar";
 const Auth = () => {
   return (
     <div>
-      <div className="mb-4">
-        <Navbar />
-      </div>
-      <div style={{ marginTop: "200px" }}>
+      <div className="py-5">
         <FormMain />
       </div>
     </div>

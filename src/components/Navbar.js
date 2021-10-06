@@ -38,19 +38,24 @@ const Navbar = () => {
           <div className={`${styles.desktopList}`}>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#home">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#feature">
-                  Features
-                </a>
+                <Link className="nav-link" to="/services">
+                  Services
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#about">
                   About
                 </a>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/personalitydev">
+                  Personality Development
+                </Link>
               </li>
               {!isLoggedIn && (
                 <li className="nav-item">
