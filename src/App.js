@@ -50,6 +50,9 @@ const App = () => {
             <MentorProfile />
           </Route>
         )}
+        <Route path="/profilePage">
+          <ProfilePage />
+        </Route>
       </Switch>
     </Router>
   );
