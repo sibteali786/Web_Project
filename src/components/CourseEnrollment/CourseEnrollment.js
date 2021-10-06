@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Fragment } from "react/cjs/react.production.min";
 import "./CourseEnrollment.css";
 const CourseEnrollment = (props) => {
@@ -7,7 +6,11 @@ const CourseEnrollment = (props) => {
   };
   return (
     <Fragment>
-      <div style={{ fontFamily: "Lato" }}>
+      <div
+        style={{ fontFamily: "Lato" }}
+        className="course-desc-div"
+        id={props.id}
+      >
         <div className="px-5 enroll-div">
           <p className="para pt-3">
             <b>Batch Duration:</b> 4 Weeks

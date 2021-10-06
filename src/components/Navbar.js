@@ -15,8 +15,9 @@ const Navbar = () => {
     history.replace("/");
   };
   return (
-    <Fragment className="mt-5">
+    <Fragment>
       <nav
+        style={{ fontFamily: "Lato" }}
         className={`${styles.nav} navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow`}
       >
         <div className="container-fluid">
@@ -38,14 +39,14 @@ const Navbar = () => {
           <div className={`${styles.desktopList}`}>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#home">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#feature">
-                  Features
-                </a>
+                <Link className="nav-link" to="/collaboration">
+                  Collaborate
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#about">

@@ -24,3 +24,11 @@
   background-color: chocolate;
   color: #e5e5e5;
 }
+@media (max-width: 1200px) {
+  .course-desc-div {
+    margin-top: 15px;
+  }
+  .enroll-button {
+    margin-bottom: 30px;
+  }
+}

@@ -23,6 +23,13 @@
   width: 100%;
   padding-inline: 30%;
 }
+.card__main {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 5px 5px 0 0 grey;
+}
+.card__main:hover {
+  transform: scale(1.1);
+}
 .collab-text {
   font-style: italic;
   font-family: "Lato";

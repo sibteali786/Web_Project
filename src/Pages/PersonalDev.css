@@ -51,3 +51,20 @@
   margin-left: 20px;
   margin-bottom: 10px;
 }
+
+@media (max-width: 600px) {
+  .personal-text {
+    font-size: 100%;
+    text-align: center;
+    padding-inline: 0;
+  }
+  .personal-heading {
+    text-align: center;
+  }
+  .courseImages {
+    padding-inline: 10px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}

@@ -6,6 +6,7 @@ import bussiness from "../Imgaes/business.jpg";
 import remote from "../Images/remote.jpg";
 import critical from "../Images/critical.jpg";
 import negotiation from "../Images/negotiation.jpg";
+import Navbar from "../components/Navbar";
 import CourseEnrollment from "../components/CourseEnrollment/CourseEnrollment";
 import { useState } from "react";
 const PersonalDev = () => {
@@ -68,6 +69,7 @@ const PersonalDev = () => {
   ];
   return (
     <Fragment>
+      <Navbar />
       <div className="container-fluid" style={{ fontFamily: "Lato" }}>
         <div className=" d-flex flex-column justify-content-center align-items-center">
           <h2 className="personal-heading">Are you ready to create impact?</h2>
@@ -78,36 +80,38 @@ const PersonalDev = () => {
           </p>
         </div>
         <div className="container-fluid mt-5">
-          <div className="row">
-            <div className="col-lg-9" style={{ backgroundColor: "#222831" }}>
+          <div className="row d-flex" style={{ width: "fit-content" }}>
+            <div className="col-xl-9" style={{ backgroundColor: "#222831" }}>
               <div className="row d-flex justify-content-center">
                 {data.map((obj, index) => {
                   return (
                     <div
                       key={index}
-                      className="col-sm-6 col-xl-3  courseDivs position-relative"
+                      className="col-sm-6 col-lg-4 col-xl-5 col-xxl-3  courseDivs position-relative"
                     >
-                      <div className="courseTextDiv">
-                        <div className="course-tile-num">
-                          {obj.copy.tileNum}
+                      <a href="#xaax">
+                        <div className="courseTextDiv">
+                          <div className="course-tile-num">
+                            {obj.copy.tileNum}
+                          </div>
+                          <div className="course-tile-text">
+                            {obj.copy.tileText.toUpperCase()}
+                          </div>
                         </div>
-                        <div className="course-tile-text">
-                          {obj.copy.tileText.toUpperCase()}
-                        </div>
-                      </div>
-                      <img
-                        style={{ height: "100%" }}
-                        src={obj.img}
-                        className="img-fluid  courseImages"
-                        alt={obj.altText}
-                      ></img>
+                        <img
+                          style={{ height: "100%" }}
+                          src={obj.img}
+                          className="img-fluid  courseImages"
+                          alt={obj.altText}
+                        ></img>
+                      </a>
                     </div>
                   );
                 })}
               </div>
             </div>
-            <div className="col-lg-3">
-              <CourseEnrollment messageHandler={mssgHandler} />
+            <div className="col-xl-3">
+              <CourseEnrollment messageHandler={mssgHandler} id={"xaax"} />
             </div>
           </div>
           {showMessage && (
