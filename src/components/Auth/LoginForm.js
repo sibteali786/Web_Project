@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useHistory } from "react-router";
 import AuthContext from "../../Store/Auth-Context";
-
+import { getTypeFromEmail } from "../Utils/fetchers";
 const LoginForm = () => {
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredPassword, setEnteredPassword] = useState("");
@@ -27,11 +27,19 @@ const LoginForm = () => {
       },
     }).then((res) => {
       if (res.ok) {
-        res.json().then((data) => {
+        res.json().then(async (data) => {
           const expirationTime = new Date(
             new Date().getTime() + +data.expiresIn * 1000
           );
-          AuthCtx.login(data.idToken, data.email, expirationTime.toISOString());
+          const tempObj = await getTypeFromEmail(data.email);
+          const tempId = Object.keys(tempObj)[0];
+          const type = tempObj[tempId].type;
+          AuthCtx.login(
+            data.idToken,
+            data.email,
+            type,
+            expirationTime.toISOString()
+          );
           history.replace("/");
         });
       } else {
@@ -82,6 +90,7 @@ const LoginForm = () => {
           <input
             className="form-control form-control-lg"
             required
+            type="password"
             onChange={passwordChangeHandler}
           ></input>
         </div>

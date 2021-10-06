@@ -1,0 +1,28 @@
+.info-div {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 0 0 grey;
+}
+.temp {
+  border-bottom: 1px solid teal;
+  font-size: 200%;
+  font-weight: 300;
+}
+.mentor-profile-img {
+  border-radius: 50%;
+  max-width: 200px;
+  height: auto;
+}
+.meetings,
+.students {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.meetings:hover,
+.students:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 1px white;
+}
+.modified {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Images/mentor-back.jpg");
+}

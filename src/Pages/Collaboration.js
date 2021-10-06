@@ -1,5 +1,6 @@
 import React from "react";
 import CollabForm from "../components/CollabForm/CollabForm";
+import Navbar from "../components/Navbar";
 import collab from "../Imgaes/collab.jpg";
 import "./Collaboration.css";
 const Collaboration = () => {
@@ -9,6 +10,7 @@ const Collaboration = () => {
     "We offer 3 partnership models for working with a range of public sector, private sector, education providers, charities and community organisations. The aim is to collaborate as a community to make a sustainable positive social impact.";
   return (
     <div style={{ fontFamily: "Lato" }}>
+      <Navbar />
       <div className="container-fluid p-0 collab-div position-relative">
         <img
           src={collab}
@@ -26,7 +28,7 @@ const Collaboration = () => {
       <div className="container" style={{ marginTop: "150px" }}>
         <div className="row d-flex flex-row justify-content-around">
           <div
-            className="card text-white bg-dark mb-3"
+            className="card text-white bg-dark mb-3 card__main"
             style={{ width: "22rem", fontSize: "110%" }}
           >
             <div className="card-body">
@@ -56,7 +58,7 @@ const Collaboration = () => {
           </div>
 
           <div
-            className="card text-white bg-dark mb-3"
+            className="card text-white bg-dark mb-3 card__main"
             style={{ width: "22rem", fontSize: "110%" }}
           >
             <div className="card-body">
@@ -83,7 +85,7 @@ const Collaboration = () => {
             </div>
           </div>
           <div
-            className="card text-white bg-dark mb-3"
+            className="card text-white bg-dark mb-3 card__main"
             style={{ width: "22rem", fontSize: "110%" }}
           >
             <div className="card-body">
@@ -110,7 +112,7 @@ const Collaboration = () => {
             </div>
           </div>
           <div
-            className="card text-white bg-dark mb-3"
+            className="card text-white bg-dark mb-3 mt-3 card__main"
             style={{ width: "22rem", fontSize: "110%" }}
           >
             <div className="card-body">
