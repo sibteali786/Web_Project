@@ -12,10 +12,13 @@
 }
 .cardColor {
   background: #fcb515;
+  box-shadow: 7px 7px 0px 2px rgba(252, 181, 21, 0.35);
+  -webkit-box-shadow: 7px 7px 0px 2px rgba(252, 181, 21, 0.35);
+  -moz-box-shadow: 7px 7px 0px 2px rgba(252, 181, 21, 0.35);
 }
 
 .cardAnimation {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .cardAnimation:hover {
@@ -29,11 +32,10 @@
 }
 
 .enrollBtn {
-  background: sandybrown;
   outline: none;
   transition: all 0.5s ease-in-out;
 }
 .enrollBtn:hover {
-  background: rgb(242, 157, 83);
-  transform: scale(1.1);
+  transform: scale(1.05);
+  color: black;
 }

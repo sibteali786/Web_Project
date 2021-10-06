@@ -2,12 +2,11 @@ const Contact = () => {
   return (
     <>
       <div>
-        <h3>Get in Touch!</h3>
-        <p className="pt-3">
+        <p className="pt-3 text-center">
           Here is how you can schedule an appointment with me.
         </p>
       </div>
-      <div className="d-flex flex-wrap justify-content-sm-start">
+      <div className="d-flex flex-wrap justify-content-sm-center">
         <button
           className="py-2 d-flex btn btn-outline-dark w-100 justify-content-around align-items-center me-0 me-sm-3 my-1"
           style={{ maxWidth: "280px" }}

@@ -87,7 +87,7 @@ const Services = () => {
             <div className="col-sm-6 col-md-4 col-lg-3">
               <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
-                  src={require("../Images/support.jpg").default}
+                  src={require("../Images/entertainment.jpg").default}
                   alt=""
                   className="img-fluid card-img-top"
                 />
@@ -100,7 +100,7 @@ const Services = () => {
                     to="/collaboration"
                     className="btn btn-outline-dark my-3"
                   >
-                    Support
+                    Entertainment
                   </Link>
                 </div>
               </div>

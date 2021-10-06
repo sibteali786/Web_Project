@@ -8,6 +8,7 @@ import Collaboration from "./Pages/Collaboration";
 import Home from "./Pages/Home";
 import Pictures from "./Pages/Pictures";
 import Services from "./Pages/Services";
+import Mentorship from "./Pages/Mentorship";
 import PersonalityDev from "./Pages/PersonalityDev";
 const App = () => {
   return (
@@ -17,8 +18,6 @@ const App = () => {
         <Route path="/" exact>
           <div style={{ fontFamily: "Lato" }}>
             <Home />
-            <Layout />
-            <ProfilePage />
           </div>
         </Route>
         <Route path="/auth">
@@ -26,6 +25,9 @@ const App = () => {
         </Route>
         <Route path="/pictures" exact>
           <Pictures />
+        </Route>
+        <Route path="/mentorship" exact>
+          <Mentorship />
         </Route>
         <Route path="/collaboration">
           <Collaboration />
@@ -35,6 +37,9 @@ const App = () => {
         </Route>
         <Route path="/personalitydev">
           <PersonalityDev />
+        </Route>
+        <Route path="/profilePage">
+          <ProfilePage />
         </Route>
       </Switch>
     </Router>

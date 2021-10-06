@@ -26,12 +26,12 @@ const PersonalityDev = () => {
         <div className="container py-5">
           <div className="row justify-content-center gy-3 text-center">
             <div className="col-sm-12 col-md-6">
-              <div className="row gy-3">
+              <div className="row justify-content-center gy-3">
                 <div className="col-sm-12 col-md-12 col-lg-6">
                   <div className={`${styles.cardColor} card text-dark`}>
                     <div className="card-body ">
                       <div className="card-text fw-bold h5 my-5">
-                        Communication
+                        Interpersonal
                       </div>
                     </div>
                   </div>
@@ -49,7 +49,7 @@ const PersonalityDev = () => {
                   <div className={`${styles.cardColor} card text-dark`}>
                     <div className="card-body">
                       <div className="card-text fw-bold h5 my-5">
-                        Interpersonal
+                        Communication
                       </div>
                     </div>
                   </div>
@@ -83,7 +83,7 @@ const PersonalityDev = () => {
                 class="btn btn-primary"
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop"
-                className={`${styles.enrollBtn} btn text-light fw-bold fs-6 mt-5 w-75`}
+                className={`${styles.enrollBtn} btn btn-outline-warning text-light fw-bold fs-6 mt-5 w-75`}
               >
                 Enroll Now
               </button>
@@ -96,7 +96,7 @@ const PersonalityDev = () => {
           <div className="display-2 text-dark fw-bold text-center my-5">
             What To Expect From Us
           </div>
-          <div className="row justify-content-center gy-3 gx-0 text-center">
+          <div className="row justify-content-center gy-3 gx-0">
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div
                 className={`${styles.cardColor} card text-dark shadow ${styles.cardAnimation}`}
@@ -164,7 +164,7 @@ const PersonalityDev = () => {
           <div class="modal-content">
             <div class="modal-header">
               <h5
-                class="modal-title text-center fw-2 fw-bold text-uppercase text-success"
+                class="modal-title display-6 fw-bold text-uppercase text-success"
                 id="staticBackdropLabel"
               >
                 Announcement !
@@ -176,8 +176,8 @@ const PersonalityDev = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body fw-bold fs-4 text-center ">
-              Our Batch 19 is going to start soon. Stay Vigilant
+            <div class="modal-body fw-bold fs-4 text-center text-danger my-5 mx-5 ">
+              Our Batch-19 is Going to Start Soon. Stay Vigilant
             </div>
             <div class="modal-footer">
               <button
