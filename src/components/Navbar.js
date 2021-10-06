@@ -15,8 +15,9 @@ const Navbar = () => {
     history.replace("/");
   };
   return (
-    <Fragment className="mt-5">
+    <Fragment>
       <nav
+        style={{ fontFamily: "Lato" }}
         className={`${styles.nav} navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow`}
       >
         <div className="container-fluid">

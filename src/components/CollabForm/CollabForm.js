@@ -179,7 +179,7 @@ const CollabForm = () => {
               <label>Interested In</label>
               <select
                 ref={catRef}
-                className="form-control "
+                className="form-select "
                 required
                 onChange={catChangeHandler}
               >

@@ -1,0 +1,34 @@
+.para,
+.para-last {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #393e46;
+  padding-inline: 10px;
+  font-size: large;
+}
+.para-last {
+  border-bottom: none;
+}
+.enroll-div {
+  background-color: #222831;
+  color: #e5e5e5;
+  box-shadow: 10px 10px 0 1px rgba(128, 128, 128, 0.438);
+}
+.enroll-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: chocolate;
+  color: #e5e5e5;
+}
+@media (max-width: 1200px) {
+  .course-desc-div {
+    margin-top: 15px;
+  }
+  .enroll-button {
+    margin-bottom: 30px;
+  }
+}
