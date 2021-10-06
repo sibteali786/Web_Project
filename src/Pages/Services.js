@@ -1,14 +1,16 @@
 import React from "react";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
+import styles from "../Styles/Services.module.css";
 const Services = () => {
   return (
     <Fragment>
       <section className="bg-light p-5 text-dark">
-        <div className="container">
+        <div className="container py-5 ">
+          <div className="display-2 text-center fw-bold">Our Services</div>
           <div className="row py-5 justify-content-center gx-3 gy-3">
             <div className="col-sm-6 col-md-4 col-lg-3 ">
-              <div className="card h-100 shadow">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
                   src={require("../Images/mentorship.jpg").default}
                   alt=""
@@ -26,7 +28,7 @@ const Services = () => {
               </div>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3 ">
-              <div className="card h-100 shadow">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
                   src={require("../Images/counselling.jpg").default}
                   alt=""
@@ -44,7 +46,7 @@ const Services = () => {
               </div>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="card h-100 shadow">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
                   src={require("../Images/opportunity.jpg").default}
                   alt=""
@@ -62,7 +64,7 @@ const Services = () => {
               </div>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="card h-100 shadow">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
                   src={require("../Images/support.jpg").default}
                   alt=""
@@ -83,7 +85,7 @@ const Services = () => {
               </div>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
-              <div className="card h-100 shadow">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
                   src={require("../Images/support.jpg").default}
                   alt=""

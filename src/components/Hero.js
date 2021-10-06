@@ -1,5 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import styles from "../Styles/Hero.module.css";
 const Hero = () => {
   return (
@@ -10,16 +11,18 @@ const Hero = () => {
             <div className="row">
               <div className="col-sm-12 col-lg-5 d-flex flex-column ">
                 <div className="d-flex justify-content-start align-content-center">
-                  <button
+                  <Link
+                    to="/pictures"
                     className={`${styles.btnText} btn btn-outline-light mx-2 my-4 flex-grow-1`}
                   >
                     <i className="fa fa-graduation-cap mx-2"></i> Careers
-                  </button>
-                  <button
+                  </Link>
+                  <Link
+                    to="/auth"
                     className={`${styles.btnText} btn btn-primary mx-2 my-4 flex-grow-1`}
                   >
                     <i className="fa fa-sign-in mx-2"></i> Register
-                  </button>
+                  </Link>
                 </div>
                 <div className="py-3">
                   <p className="fw-bold h2 text-light">

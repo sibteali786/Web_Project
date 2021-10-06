@@ -1,0 +1,17 @@
+.back {
+  background: url("../Images/personalityDev.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 870px;
+}
+
+.cardColor {
+  background: #fcb515;
+}
+
+.cardAnimation {
+  transition: all 0.5s ease-in-out;
+}
+
+.cardAnimation:hover {
+  transform: scale(1.1);
+}
