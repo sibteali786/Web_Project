@@ -1,0 +1,10 @@
+.roleCard {
+  background: rgb(84, 81, 81);
+}
+
+@media screen and (max-width:574px) {
+ .roleCard {
+  background: transparent;
+} 
+  
+}
