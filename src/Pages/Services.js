@@ -57,7 +57,10 @@ const Services = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Labore, culpa?
                   </div>
-                  <Link to="/opportunity" className="btn btn-outline-dark my-3">
+                  <Link
+                    to="/personalitydev"
+                    className="btn btn-outline-dark my-3"
+                  >
                     Opportunities
                   </Link>
                 </div>
