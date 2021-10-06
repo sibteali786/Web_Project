@@ -1,72 +1,108 @@
 import React from "react";
 import { Fragment } from "react";
-
+import { Link } from "react-router-dom";
+import styles from "../Styles/Services.module.css";
 const Services = () => {
   return (
     <Fragment>
       <section className="bg-light p-5 text-dark">
-        <div className="container">
-          <div className="row py-5 justify-content-center">
-            <div className="col-sm-6 col-md-4 col-lg-3 shadow rounded-3 my-2">
-              <div className="d-flex flex-column justify-content-between align-items-center mx-1">
+        <div className="container py-5 ">
+          <div className="display-2 text-center fw-bold">Our Services</div>
+          <div className="row py-5 justify-content-center gx-3 gy-3">
+            <div className="col-sm-6 col-md-4 col-lg-3 ">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
-                  src={require("../Images/mentosrhip.svg").default}
+                  src={require("../Images/mentorship.jpg").default}
                   alt=""
-                  className="img-fluid shadow rounded-3 mt-2"
+                  className="img-fluid card-img-top"
                 />
-                <div className="text-body fs-6 text-center py-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, culpa?
+                <div className="card-body text-center">
+                  <div className="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore, culpa?
+                  </div>
+                  <Link to="/mentorship" className="btn btn-outline-dark my-3">
+                    Mentorship
+                  </Link>
                 </div>
-                <button className="btn btn-outline-dark my-3">
-                  Get Mentorship
-                </button>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3 shadow rounded-3 my-2">
-              <div className="d-flex flex-column justify-content-between align-items-center mx-1 ">
+            <div className="col-sm-6 col-md-4 col-lg-3 ">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
-                  src={require("../Images/career.svg").default}
+                  src={require("../Images/counselling.jpg").default}
                   alt=""
-                  className="img-fluid shadow rounded-3 mt-2"
+                  className="img-fluid card-img-top"
                 />
-                <div className="text-body fs-6 text-center py-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, culpa?
+                <div className="card-body text-center">
+                  <div className="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore, culpa?
+                  </div>
+                  <Link to="/pictures" className="btn btn-outline-dark my-3">
+                    Career Counselling
+                  </Link>
                 </div>
-                <button className="btn btn-outline-dark my-3">
-                  Career Counselling
-                </button>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3 shadow rounded-3 my-2">
-              <div className="d-flex flex-column justify-content-between align-items-center mx-1 ">
+            <div className="col-sm-6 col-md-4 col-lg-3">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
-                  src={require("../Images/opporunities.svg").default}
+                  src={require("../Images/opportunity.jpg").default}
                   alt=""
-                  className="img-fluid shadow rounded-3 mt-2"
+                  className="img-fluid card-img-top"
                 />
-                <div className="text-body fs-6 text-center py-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, culpa?
+                <div className="card-body text-center">
+                  <div className="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore, culpa?
+                  </div>
+                  <Link to="/opportunity" className="btn btn-outline-dark my-3">
+                    Opportunities
+                  </Link>
                 </div>
-                <button className="btn btn-outline-dark my-3">
-                  Opportunities
-                </button>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3 shadow rounded-3 my-2">
-              <div className="d-flex flex-column justify-content-between align-items-center mx-1 ">
+            <div className="col-sm-6 col-md-4 col-lg-3">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
-                  src={require("../Images/support.svg").default}
+                  src={require("../Images/support.jpg").default}
                   alt=""
-                  className="img-fluid shadow rounded-3 mt-2"
+                  className="img-fluid card-img-top"
                 />
-                <div className="text-body fs-6 text-center py-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, culpa?
+                <div className="card-body text-center">
+                  <div className="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore, culpa?
+                  </div>
+                  <Link
+                    to="/collaboration"
+                    className="btn btn-outline-dark my-3"
+                  >
+                    Support
+                  </Link>
                 </div>
-                <button className="btn btn-outline-dark my-3">Support</button>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-4 col-lg-3">
+              <div className={`${styles.cardAnimation} card h-100 shadow`}>
+                <img
+                  src={require("../Images/support.jpg").default}
+                  alt=""
+                  className="img-fluid card-img-top"
+                />
+                <div className="card-body text-center">
+                  <div className="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore, culpa?
+                  </div>
+                  <Link
+                    to="/collaboration"
+                    className="btn btn-outline-dark my-3"
+                  >
+                    Support
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
