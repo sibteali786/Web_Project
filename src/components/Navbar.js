@@ -53,11 +53,6 @@ const Navbar = () => {
                   About
                 </a>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/personalitydev">
-                  Personality Development
-                </Link>
-              </li>
               {!isLoggedIn && (
                 <li className="nav-item">
                   <Link className="nav-link" to="/auth">
