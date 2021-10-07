@@ -14,7 +14,7 @@ const Pictures = () => {
       img: business,
       copy: {
         tileNum: "06",
-        tileText: "Social Media Manager",
+        tileText: "Marketing Intern",
       },
       altText: "person giving talk",
     },
@@ -22,7 +22,7 @@ const Pictures = () => {
       img: economics,
       copy: {
         tileNum: "09",
-        tileText: "Campus Ambassador",
+        tileText: "Student Ambassador",
       },
       altText: "Economic diagram",
     },
@@ -30,7 +30,7 @@ const Pictures = () => {
       img: medicine,
       copy: {
         tileNum: "12",
-        tileText: "Finance Director",
+        tileText: "Student Guide",
       },
       altText: "medical toolkit",
     },
@@ -59,8 +59,11 @@ const Pictures = () => {
       altText: "screen showing code",
     },
   ];
-  const handler = (e) => {
-    history.push(`/pictures/${e.target.innerText.toLowerCase()}`);
+  const actBtnClickHandler = (e) => {
+    e.preventDefault();
+    const res = e.target.innerText.toLowerCase();
+    const res2 = res.split(" ").join("");
+    history.push(`/careers/${res2}`);
   };
   return (
     <div className="container mt-5 pt-5 margin-left-0 d-flex flex-column justify-content-center align-items-center">
@@ -72,13 +75,17 @@ const Pictures = () => {
               id="xaxa"
               key={index}
               className="col-sm-6 col-xl-3  catDivs position-relative"
-              onClick={handler}
             >
               <div className="textDiv">
                 <div className="tile-num">{obj.copy.tileNum}</div>
-                <div className="tile-text">
-                  {obj.copy.tileText.toUpperCase()}
-                </div>
+                <button
+                  className="ml-2 mb-1 act-btn"
+                  onClick={actBtnClickHandler}
+                >
+                  <div className="tile-text">
+                    {obj.copy.tileText.toUpperCase()}
+                  </div>
+                </button>
               </div>
               <img
                 src={obj.img}

@@ -3,7 +3,10 @@ import styles from "../Styles/PersonalityDev.module.css";
 import { Link } from "react-router-dom";
 const PersonalityDev = () => {
   return (
-    <section className="text-light mt-5" style={{ height: "100vh" }}>
+    <section
+      className="text-light mt-5"
+      style={{ height: "100vh", fontFamily: "Lato" }}
+    >
       <div className={`${styles.back} h-100`}>
         <div
           className={`${styles.backOverlay} d-flex flex-column justify-content-center align-content-center h-100`}

@@ -1,6 +1,5 @@
 import React from "react";
 import FormMain from "../components/Auth/FormMain";
-import Navbar from "../components/Navbar";
 const Auth = () => {
   return (
     <div>
