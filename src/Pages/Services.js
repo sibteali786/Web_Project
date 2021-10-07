@@ -39,7 +39,10 @@ const Services = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Labore, culpa?
                   </div>
-                  <Link to="/pictures" className="btn btn-outline-dark my-3">
+                  <Link
+                    to="/careerCounselling"
+                    className="btn btn-outline-dark my-3"
+                  >
                     Career Counselling
                   </Link>
                 </div>
@@ -57,7 +60,10 @@ const Services = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Labore, culpa?
                   </div>
-                  <Link to="/opportunity" className="btn btn-outline-dark my-3">
+                  <Link
+                    to="/personalitydev"
+                    className="btn btn-outline-dark my-3"
+                  >
                     Opportunities
                   </Link>
                 </div>
@@ -87,7 +93,7 @@ const Services = () => {
             <div className="col-sm-6 col-md-4 col-lg-3">
               <div className={`${styles.cardAnimation} card h-100 shadow`}>
                 <img
-                  src={require("../Images/support.jpg").default}
+                  src={require("../Images/entertainment.jpg").default}
                   alt=""
                   className="img-fluid card-img-top"
                 />
@@ -100,7 +106,7 @@ const Services = () => {
                     to="/collaboration"
                     className="btn btn-outline-dark my-3"
                   >
-                    Support
+                    Entertainment
                   </Link>
                 </div>
               </div>

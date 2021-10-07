@@ -1,17 +1,9 @@
-import MentorProfile from "./MentorProfile";
+import Mentors from "../Mentors";
 
 const MentorProfilesGrid = () => {
   return (
-    <div className="row py-5 m-0 justify-content-center">
-      {/* Sample Users */}
-      <MentorProfile />
-      <MentorProfile />
-      <MentorProfile />
-      <MentorProfile />
-      <MentorProfile />
-      <MentorProfile />
-      <MentorProfile />
-      <MentorProfile />
+    <div className="p-5 bg-light">
+      <Mentors />
     </div>
   );
 };

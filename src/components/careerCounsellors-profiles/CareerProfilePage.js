@@ -19,17 +19,17 @@ const ProfilePage = () => {
       </div>
       <About />
       <div className="my-4 d-flex justify-content-between align-content-center">
-        <Link to="/mentorship" className="btn btn-outline-dark">
-          Back to Mentors Page
+        <Link to="/careerCounselling" className="btn btn-outline-dark">
+          Back to Career Counselling Page
         </Link>
         <button
-          to="/mentorship"
+          to="/careerCounselling"
           type="button"
           class="btn btn-outline-dark"
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
         >
-          Be My Mentor
+          Be My Career Counsellor
         </button>
       </div>
       <div

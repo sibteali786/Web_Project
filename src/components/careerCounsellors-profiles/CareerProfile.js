@@ -1,10 +1,11 @@
+import React from "react";
 import { Link } from "react-router-dom";
-const MentorProfile = () => {
+const CareerProfile = () => {
   return (
     <div className="col-sm-4 text-center">
       <Link
-        to="/mentorProfilePage"
-        className="text-dark fw-bold"
+        to="/CareerProfilePage"
+        className="text-light fw-bold"
         style={{ textDecoration: "none" }}
       >
         <div className="avatar mx-auto"></div>
@@ -14,4 +15,4 @@ const MentorProfile = () => {
   );
 };
 
-export default MentorProfile;
+export default CareerProfile;
