@@ -1,0 +1,26 @@
+.sess-btn {
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.sess-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px #3a4750;
+  background-color: #3a4750;
+}
+.modified-sp {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Images/student-back.jpg");
+}
+.meetings-2,
+.students-2 {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.meetings-2:hover,
+.students-2:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 0 1px white;
+}

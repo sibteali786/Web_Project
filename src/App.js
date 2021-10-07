@@ -7,12 +7,13 @@ import Auth from "./Pages/Auth";
 import Collaboration from "./Pages/Collaboration";
 import Home from "./Pages/Home";
 import MentorProfile from "./Pages/MentorProfile";
-import PersonalDev from "./Pages/PersonalDev";
 import Pictures from "./Pages/Pictures";
 import AuthContext from "./Store/Auth-Context";
 import { useContext } from "react";
 import Services from "./Pages/Services";
 import PersonalityDev from "./Pages/PersonalityDev";
+import StudentProfile from "./Pages/StudentProfile";
+import CareerReg from "./Pages/CareerReg";
 const App = () => {
   const authCtx = useContext(AuthContext);
   const type = authCtx.type;
@@ -30,7 +31,7 @@ const App = () => {
         <Route path="/auth">
           <Auth />
         </Route>
-        <Route path="/pictures" exact>
+        <Route path="/careers" exact>
           <Pictures />
         </Route>
         <Route path="/collaboration">
@@ -47,6 +48,12 @@ const App = () => {
             <MentorProfile />
           </Route>
         )}
+        <Route path="/profile">
+          <StudentProfile />
+        </Route>
+        <Route path="/careers/:carId" exact>
+          <CareerReg />
+        </Route>
       </Switch>
     </Router>
   );

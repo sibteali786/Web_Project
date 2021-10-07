@@ -2,7 +2,10 @@ import React from "react";
 import styles from "../Styles/PersonalityDev.module.css";
 const PersonalityDev = () => {
   return (
-    <section className="text-light mt-5" style={{ height: "100vh" }}>
+    <section
+      className="text-light mt-5"
+      style={{ height: "100vh", fontFamily: "Lato" }}
+    >
       <div className={`${styles.back} h-100`}>
         <div
           className={`d-flex flex-column justify-content-center align-content-center h-100`}

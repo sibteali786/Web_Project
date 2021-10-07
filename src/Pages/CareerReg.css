@@ -1,0 +1,11 @@
+.career-main-copy {
+  font-size: 110%;
+  padding-inline: 80px;
+  margin-bottom: 15px;
+}
+.career-elig-copy {
+  font-size: 110%;
+}
+li::marker {
+  padding: 0;
+}

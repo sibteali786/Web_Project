@@ -12,7 +12,7 @@ const Hero = () => {
               <div className="col-sm-12 col-lg-5 d-flex flex-column ">
                 <div className="d-flex justify-content-start align-content-center">
                   <Link
-                    to="/pictures"
+                    to="/careers"
                     className={`${styles.btnText} btn btn-outline-light mx-2 my-4 flex-grow-1`}
                   >
                     <i className="fa fa-graduation-cap mx-2"></i> Careers

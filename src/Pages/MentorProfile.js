@@ -1,7 +1,5 @@
 import { Fragment } from "react/cjs/react.development";
-import Navbar from "../components/Navbar";
 import img from "../Images/mentor.jpg";
-import img2 from "../Images/mentor-back.jpg";
 import "./MentorProfile.css";
 const MentorProfile = () => {
   const students = [
