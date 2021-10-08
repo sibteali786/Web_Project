@@ -1,5 +1,5 @@
 import { Fragment } from "react/cjs/react.development";
-import img from "../Images/mentor.jpg";
+import img from "../Images/Mentor.jpg";
 import "./MentorProfile.css";
 const MentorProfile = () => {
   const students = [

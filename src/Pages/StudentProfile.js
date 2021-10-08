@@ -1,7 +1,7 @@
 import "./StudentProfile.css";
 import { Fragment } from "react";
 import img from "../Images/student.jpg";
-import img3 from "../Images/mentor.jpg";
+import img3 from "../Images/Mentor.jpg";
 import Sess from "../components/SVGS/Sess";
 const StudentProfile = () => {
   const activity = ["No recent activity to show"];

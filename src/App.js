@@ -12,8 +12,10 @@ import AuthContext from "./Store/Auth-Context";
 import { useContext } from "react";
 import Services from "./Pages/Services";
 import PersonalityDev from "./Pages/PersonalityDev";
+import CareerCounselling from "./Pages/CareerCounselling";
 import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
+import Mentorship from "./Pages/Mentorship";
 const App = () => {
   const authCtx = useContext(AuthContext);
   const type = authCtx.type;
@@ -24,8 +26,6 @@ const App = () => {
         <Route path="/" exact>
           <div style={{ fontFamily: "Lato" }}>
             <Home />
-            <Layout />
-            <ProfilePage />
           </div>
         </Route>
         <Route path="/auth">
@@ -53,6 +53,12 @@ const App = () => {
         </Route>
         <Route path="/careers/:carId" exact>
           <CareerReg />
+        </Route>
+        <Route path="/careerCounselling">
+          <CareerCounselling />
+        </Route>
+        <Route path="/mentorship">
+          <Mentorship />
         </Route>
       </Switch>
     </Router>
