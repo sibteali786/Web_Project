@@ -51,7 +51,12 @@ const RegistrationForm = () => {
           const expirationTime = new Date(
             new Date().getTime() + +data.expiresIn * 1000
           );
-          AuthCtx.login(data.idToken, data.email, expirationTime.toISOString());
+          AuthCtx.login(
+            data.idToken,
+            data.email,
+            selectedType,
+            expirationTime.toISOString()
+          );
           fetch("https://gul-e-shaoor-default-rtdb.firebaseio.com/Users.json", {
             method: "POST",
             body: JSON.stringify({
@@ -69,7 +74,7 @@ const RegistrationForm = () => {
               "Content-Type": "application/json",
             },
           });
-          history.replace("/");
+          history.replace("/newStudent");
         });
       } else {
         res.json().then((data) => {

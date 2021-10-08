@@ -14,9 +14,12 @@ import Services from "./Pages/Services";
 import PersonalityDev from "./Pages/PersonalityDev";
 import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
+import NewStudentForm from "./Pages/NewStudentForm";
+import RegisWalker from "./Pages/RegisWalker";
 const App = () => {
   const authCtx = useContext(AuthContext);
   const type = authCtx.type;
+  console.log(type);
   return (
     <Router>
       <Navbar />
@@ -53,6 +56,14 @@ const App = () => {
         </Route>
         <Route path="/careers/:carId" exact>
           <CareerReg />
+        </Route>
+        {type === "Student" && (
+          <Route path="/newStudent">
+            <NewStudentForm />
+          </Route>
+        )}
+        <Route path="/newRegis">
+          <RegisWalker />
         </Route>
       </Switch>
     </Router>

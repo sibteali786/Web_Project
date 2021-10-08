@@ -1,7 +1,20 @@
 import { useRef } from "react";
 import { useState } from "react/cjs/react.development";
-
+import { getStorage, ref, uploadBytes } from "firebase/storage";
+import { initializeApp } from "@firebase/app";
 const CareerForm = () => {
+  const firebaseConfig = {
+    apiKey: "AIzaSyByHTw-kZD-od-O-rPfl6qbD2x__5Tfitc",
+    authDomain: "gul-e-shaoor.firebaseapp.com",
+    databaseURL: "https://gul-e-shaoor-default-rtdb.firebaseio.com",
+    projectId: "gul-e-shaoor",
+    storageBucket: "gul-e-shaoor.appspot.com",
+    messagingSenderId: "1080881422656",
+    appId: "1:1080881422656:web:12f5e2ac8959fe8c441aa5",
+  };
+  const app = initializeApp(firebaseConfig);
+  const storage = getStorage(app);
+
   const [fullName, setFullName] = useState("");
   const [age, setAge] = useState("");
   const [education, setEducation] = useState("");
@@ -11,6 +24,9 @@ const CareerForm = () => {
   const [description, setDescription] = useState("");
   const [institute, setInstitute] = useState("");
   const [status, setStatus] = useState(false);
+  const [cv, setCv] = useState(null);
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
@@ -27,6 +43,8 @@ const CareerForm = () => {
           description: description,
           role: role,
           gender: gender,
+          email: email,
+          phone: phone,
         }),
         headers: {
           "Content-Type": "application/json",
@@ -37,6 +55,10 @@ const CareerForm = () => {
         setStatus(true);
       }
     });
+    const storageRef = ref(storage, `${email}/cv`);
+    uploadBytes(storageRef, cv).then((snapshot) => {
+      console.log("Uploaded a blob or file!");
+    });
     nameRef.current.value = "";
     ageRef.current.value = "";
     instituteRef.current.value = "";
@@ -44,6 +66,9 @@ const CareerForm = () => {
     roleRef.current.value = "";
     descriptionRef.current.value = "";
     educationRef.current.value = "";
+    phoneRef.current.value = "";
+    emailRef.current.value = "";
+    cvRef.current.value = "";
   };
   const crossHandler = () => {
     setStatus(false);
@@ -80,6 +105,20 @@ const CareerForm = () => {
     const val = e.target.value.trim();
     setRole(val);
   };
+  const emailChangeHandler = (e) => {
+    const val = e.target.value;
+    setEmail(val);
+  };
+  const phoneChangeHandler = (e) => {
+    const val = e.target.value;
+    setPhone(val);
+  };
+  const cvChangeHandler = (e) => {
+    if (e.target.files[0]) {
+      const val = e.target.files[0];
+      setCv(val);
+    }
+  };
   const nameRef = useRef(null);
   const ageRef = useRef(null);
   const educationRef = useRef(null);
@@ -87,6 +126,9 @@ const CareerForm = () => {
   const roleRef = useRef(null);
   const instituteRef = useRef(null);
   const descriptionRef = useRef(null);
+  const emailRef = useRef(null);
+  const phoneRef = useRef(null);
+  const cvRef = useRef(null);
   return (
     <div className="mt-5 mb-5">
       <h2 className="text-center">Registration Form</h2>
@@ -180,7 +222,7 @@ const CareerForm = () => {
             <select
               className="form-select"
               placeholder="Experience"
-              aria-label="Full name"
+              aria-label=""
               onChange={experianceChangeHandler}
               required
               ref={experianceRef}
@@ -202,6 +244,41 @@ const CareerForm = () => {
               aria-label="current role"
               onChange={roleChangeHandler}
               ref={roleRef}
+            />
+          </div>
+          <div className="col d-flex align-items-center">
+            <label className="ml-1">CV:</label>
+            <input
+              type="file"
+              className="form-control"
+              placeholder=""
+              aria-label=""
+              onChange={cvChangeHandler}
+              ref={cvRef}
+            />
+          </div>
+        </div>
+        <div className="row mt-3">
+          <div className="col">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Email"
+              aria-label="Email"
+              onChange={emailChangeHandler}
+              required
+              ref={emailRef}
+            />
+          </div>
+          <div className="col">
+            <input
+              type="number"
+              className="form-control"
+              placeholder="Phone Number"
+              aria-label="phone no."
+              onChange={phoneChangeHandler}
+              required
+              ref={phoneRef}
             />
           </div>
         </div>
