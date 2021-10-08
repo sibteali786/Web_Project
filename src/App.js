@@ -12,6 +12,7 @@ import AuthContext from "./Store/Auth-Context";
 import { useContext } from "react";
 import Services from "./Pages/Services";
 import PersonalityDev from "./Pages/PersonalityDev";
+
 import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
 import RegisWalker from "./Pages/RegisWalker";
@@ -57,6 +58,7 @@ const App = () => {
         <Route path="/careers/:carId" exact>
           <CareerReg />
         </Route>
+
         {isLoggedin && type === "Student" && (
           <Route path="/newRegis">
             <RegisWalker />
