@@ -74,7 +74,7 @@ const RegistrationForm = () => {
               "Content-Type": "application/json",
             },
           });
-          history.replace("/newStudent");
+          history.replace("/newRegis");
         });
       } else {
         res.json().then((data) => {

@@ -24,3 +24,10 @@
   transform: scale(1.07);
   box-shadow: 0 0 0 1px white;
 }
+
+.special-2 {
+  cursor: pointer;
+  transform: scale(1.07);
+  box-shadow: 0 0 0 1px white;
+  transition: all 0.2s ease-in-out;
+}

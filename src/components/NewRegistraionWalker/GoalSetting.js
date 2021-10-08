@@ -4,7 +4,7 @@ import { useState } from "react/cjs/react.development";
 import { getObjId } from "../../Pages/NewStudentForm";
 import AuthContext from "../../Store/Auth-Context";
 
-const GoalSetting = () => {
+const GoalSetting = (props) => {
   const [answer1, setanswer1] = useState("");
   const [answer2, setanswer2] = useState("");
   const [answer3, setanswer3] = useState("");
@@ -58,6 +58,7 @@ const GoalSetting = () => {
         },
       }
     );
+    props.appMan();
   };
   return (
     <div

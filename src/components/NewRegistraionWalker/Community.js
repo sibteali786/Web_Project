@@ -1,4 +1,8 @@
-const Community = () => {
+const Community = (props) => {
+  const clkHandler = (e) => {
+    e.preventDefault();
+    props.appMan();
+  };
   return (
     <div
       style={{
@@ -22,8 +26,9 @@ const Community = () => {
         <button
           className="btn btn-lg btn-outline-light "
           style={{ marginRight: "15px" }}
+          onClick={clkHandler}
         >
-          Skip for Now
+          Next
         </button>
         <button className="btn btn-lg btn-outline-light">
           Join Facebook group

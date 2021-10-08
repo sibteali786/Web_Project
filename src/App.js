@@ -14,11 +14,11 @@ import Services from "./Pages/Services";
 import PersonalityDev from "./Pages/PersonalityDev";
 import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
-import NewStudentForm from "./Pages/NewStudentForm";
 import RegisWalker from "./Pages/RegisWalker";
 const App = () => {
   const authCtx = useContext(AuthContext);
   const type = authCtx.type;
+  const isLoggedin = authCtx.isLoggedin;
   console.log(type);
   return (
     <Router>
@@ -57,14 +57,11 @@ const App = () => {
         <Route path="/careers/:carId" exact>
           <CareerReg />
         </Route>
-        {type === "Student" && (
-          <Route path="/newStudent">
-            <NewStudentForm />
+        {isLoggedin && type === "Student" && (
+          <Route path="/newRegis">
+            <RegisWalker />
           </Route>
         )}
-        <Route path="/newRegis">
-          <RegisWalker />
-        </Route>
       </Switch>
     </Router>
   );

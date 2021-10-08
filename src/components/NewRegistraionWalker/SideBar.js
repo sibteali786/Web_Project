@@ -1,6 +1,6 @@
 import "./SideBar.css";
 import img from "../../Images/student.jpg";
-const SideBar = () => {
+const SideBar = (props) => {
   return (
     <div
       style={{
@@ -36,7 +36,9 @@ const SideBar = () => {
           Sign Up
         </div>
         <div
-          className="card my-1 p-1 students-2"
+          className={`card my-1 p-1 ${
+            props.appStat.personalDetailsStatus === false ? "special-2" : ""
+          }`}
           style={{
             width: "",
             backgroundColor: "#393E46",
@@ -46,7 +48,12 @@ const SideBar = () => {
           Personal Data
         </div>
         <div
-          className="card my-1 p-1 students-2"
+          className={`card my-1 p-1 ${
+            props.appStat.personalDetailsStatus === true &&
+            props.appStat.goalSetting === false
+              ? "special-2"
+              : ""
+          }`}
           style={{
             width: "",
             backgroundColor: "#393E46",
@@ -56,7 +63,12 @@ const SideBar = () => {
           Goal Setting
         </div>
         <div
-          className="card my-1 p-1 students-2"
+          className={`card my-1 p-1 ${
+            props.appStat.goalSetting === true &&
+            props.appStat.joinCommunity === false
+              ? "special-2"
+              : ""
+          }`}
           style={{
             width: "",
             backgroundColor: "#393E46",

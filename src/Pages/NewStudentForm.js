@@ -11,7 +11,7 @@ export const getObjId = async (email) => {
   return Object.keys(result)[0];
 };
 
-const NewStudentForm = () => {
+const NewStudentForm = (props) => {
   const [street1, setStreet1] = useState("");
   const [street2, setStreet2] = useState("");
   const [name, setName] = useState("");
@@ -81,7 +81,7 @@ const NewStudentForm = () => {
         });
       }
     });
-    history.replace("/");
+    props.appMan();
   };
 
   const nameChangeHandler = (e) => {
@@ -179,12 +179,14 @@ const NewStudentForm = () => {
   return (
     <div
       style={{
-        marginTop: "150px",
+        marginRight: "20px",
+        marginBottom: "10px",
         backgroundColor: "rgb(34, 40, 49)",
         color: "#eee",
         fontFamily: "Lato",
+        borderRadius: "10px",
       }}
-      className="p-5"
+      className="p-4"
     >
       <form className="container" onSubmit={formSubmitHandler}>
         <h1 className="text-center">Profile Data</h1>
