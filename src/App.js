@@ -45,7 +45,6 @@ const App = () => {
         <Route path="/personalitydev">
           <PersonalityDev />
         </Route>
-
         {type === "Mentor/Counselor" && (
           <Route path="/profile">
             <MentorProfile />
