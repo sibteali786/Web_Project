@@ -36,7 +36,21 @@
   margin-left: 20px;
 }
 .tile-text {
-  font-size: 100%;
-  margin-left: 20px;
+  font-size: 90%;
   margin-bottom: 10px;
+}
+.act-btn {
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0.198);
+  color: #eee;
+  transition: all 0.2s ease-in-out;
+}
+.act-btn:hover {
+  color: rgb(58, 58, 58);
+  background-color: rgba(238, 238, 238, 0.65);
 }
