@@ -5,9 +5,12 @@ import styles from "../Styles/Services.module.css";
 const Services = () => {
   return (
     <Fragment>
-      <section className="bg-light p-5 text-dark">
+      <section
+        className="bg-light p-5 text-dark"
+        style={{ fontFamily: "Lato" }}
+      >
         <div className="container py-5 ">
-          <div className="display-2 text-center fw-bold">Our Services</div>
+          <div className="display-2 text-center">Our Services</div>
           <div className="row py-5 justify-content-center gx-3 gy-3">
             <div className="col-sm-6 col-md-4 col-lg-3 ">
               <div className={`${styles.cardAnimation} card h-100 shadow`}>

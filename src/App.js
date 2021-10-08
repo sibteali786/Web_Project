@@ -16,9 +16,14 @@ import CareerCounselling from "./Pages/CareerCounselling";
 import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
 import Mentorship from "./Pages/Mentorship";
+import StudentProfile from "./Pages/StudentProfile";
+import CareerReg from "./Pages/CareerReg";
+import RegisWalker from "./Pages/RegisWalker";
 const App = () => {
   const authCtx = useContext(AuthContext);
   const type = authCtx.type;
+  const isLoggedin = authCtx.isLoggedin;
+  console.log(type);
   return (
     <Router>
       <Navbar />
@@ -60,6 +65,12 @@ const App = () => {
         <Route path="/mentorship">
           <Mentorship />
         </Route>
+
+        {isLoggedin && type === "Student" && (
+          <Route path="/newRegis">
+            <RegisWalker />
+          </Route>
+        )}
       </Switch>
     </Router>
   );
