@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import ProfilePage from "./components/mentor-profiles/ProfilePage";
-import Layout from "./components/mentorship-section/Layout";
+import CareerProfilePage from "./components/careerCounsellors-profiles/CareerProfilePage";
 import Navbar from "./components/Navbar";
 import Auth from "./Pages/Auth";
 import Collaboration from "./Pages/Collaboration";
@@ -16,6 +16,7 @@ import CareerCounselling from "./Pages/CareerCounselling";
 import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
 import Mentorship from "./Pages/Mentorship";
+import Entertainment from "./Pages/Entertainment";
 const App = () => {
   const authCtx = useContext(AuthContext);
   const type = authCtx.type;
@@ -59,6 +60,15 @@ const App = () => {
         </Route>
         <Route path="/mentorship">
           <Mentorship />
+        </Route>
+        <Route path="/entertainment">
+          <Entertainment />
+        </Route>
+        <Route path="/mentorProfilePage">
+          <ProfilePage />
+        </Route>
+        <Route path="/CareerProfilePage">
+          <CareerProfilePage />
         </Route>
       </Switch>
     </Router>

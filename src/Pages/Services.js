@@ -103,7 +103,7 @@ const Services = () => {
                     Labore, culpa?
                   </div>
                   <Link
-                    to="/collaboration"
+                    to="/entertainment"
                     className="btn btn-outline-dark my-3"
                   >
                     Entertainment
