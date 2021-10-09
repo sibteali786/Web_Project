@@ -1,7 +1,7 @@
 import React from "react";
 import CollabForm from "../components/CollabForm/CollabForm";
 import Navbar from "../components/Navbar";
-import collab from "../Imgaes/collab.jpg";
+import collab from "../Images/collab.jpg";
 import "./Collaboration.css";
 const Collaboration = () => {
   const someText2 =
