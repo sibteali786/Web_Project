@@ -28,7 +28,7 @@ const Entertainment = () => {
     <div className="">
       <nav
         className="navbar navbar-expand-lg navbar-light bg-light fixed-top"
-        style={{ marginTop: "70px" }}
+        style={{ marginTop: "80px" }}
       >
         <div className="container-fluid">
           <div id="navbarNav">

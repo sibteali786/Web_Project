@@ -28,11 +28,12 @@ const Navbar = () => {
           />
         </span>
         <button
-          className="navbar-toggler"
+          className={`${styles.bars} navbar-toggler`}
           type="button"
           onClick={handleCollapsed}
+          style={{ color: "white" }}
         >
-          <span className="navbar-toggler-icon"></span>
+          <i class="fa fa-bars" style={{ fontSize: "2rem" }}></i>
         </button>
         <div className={`${styles.desktopList}`}>
           <ul className={`${styles.list} ms-auto h5`}>
@@ -65,13 +66,9 @@ const Navbar = () => {
           <Link className="" href="#about">
             About
           </Link>
-          {!isLoggedIn && (
-            <Link className="nav-link" to="/auth">
-              Log in
-            </Link>
-          )}
+          {!isLoggedIn && <Link to="/auth">Log in</Link>}
           {isLoggedIn && (
-            <Link className="nav-link" to="#" onClick={logoutHandler}>
+            <Link to="#" onClick={logoutHandler}>
               Log out
             </Link>
           )}

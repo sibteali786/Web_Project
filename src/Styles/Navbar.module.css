@@ -1,5 +1,5 @@
 .nav {
-  height: 100px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,6 +11,8 @@
 .logo {
   /* transform: scale(0.4); */
   height: 60px;
+  vertical-align: middle;
+  transform: translate(0%, -12%);
 }
 
 .mobileNav {
@@ -30,11 +32,6 @@
   color: honeydew;
   margin: 2rem 0;
   font-size: clamp(1.5rem, 3vh, 3rem);
-  transition: transform 0.5s ease-in-out;
-}
-.mobileNav a:hover {
-  color: rgb(204, 211, 204);
-  transform: scale(1.2);
 }
 
 .listDisplay {
@@ -44,12 +41,55 @@
   align-items: center;
   height: 100%;
 }
+.listDisplay a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin: 0.8rem 0.8rem;
+  padding: 0;
+  letter-spacing: 0.3rem;
+  list-style-type: none;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.listDisplay a:after,
+.listDisplay a:before {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  width: 0px;
+  bottom: -5px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.listDisplay a:before {
+  left: 50%;
+}
+
+.listDisplay a:after {
+  right: 50%;
+}
+
+.listDisplay a:hover:before,
+.listDisplay a:hover:after {
+  width: 50%;
+  opacity: 1;
+}
 .desktopList {
   display: block;
+}
+.bars {
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .desktopList {
     display: none;
+  }
+  .bars {
+    display: block;
   }
 }
 
@@ -60,6 +100,7 @@
 }
 
 .list a {
+  font-size: 1rem;
   position: relative;
   text-decoration: none;
   color: white;

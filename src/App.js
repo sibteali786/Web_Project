@@ -28,7 +28,7 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path="/" exact>
-          <div style={{ fontFamily: "Lato" }}>
+          <div style={{ fontFamily: "Lato", marginTop: "80px" }}>
             <Home />
           </div>
         </Route>
@@ -52,9 +52,11 @@ const App = () => {
             <MentorProfile />
           </Route>
         )}
-        <Route path="/profile">
-          <StudentProfile />
-        </Route>
+        {type == "Student" && (
+          <Route path="/profile">
+            <StudentProfile />
+          </Route>
+        )}
         <Route path="/careers/:carId" exact>
           <CareerReg />
         </Route>
