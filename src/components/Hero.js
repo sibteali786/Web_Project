@@ -8,14 +8,14 @@ const Hero = () => {
       <section style={{ marginTop: "80px" }} className={`bg-dark p-5`}>
         <div className="container">
           <div className="d-grid">
-            <div className="row">
-              <div className="col-sm-12 col-lg-5 d-flex flex-column ">
+            <div className="row justify-content-between">
+              <div className="col-sm-12 col-lg-6 d-flex flex-column ">
                 <div className="d-flex justify-content-start align-content-center">
                   <Link
                     to="/careers"
                     className={`${styles.btnText} btn btn-outline-light mx-2 my-4 flex-grow-1`}
                   >
-                    <i className="fa fa-graduation-cap mx-2"></i> Careers
+                    <i className="fa fa-graduation-cap mx-2"></i> Careers 
                   </Link>
                   <Link
                     to="/auth"
@@ -38,9 +38,9 @@ const Hero = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-lg-7">
+              <div className="col-sm-12 col-lg-6">
                 <img
-                  src={require("../Images/GuleShaoorWord.svg").default}
+                  src={require("../Images/Logo_1.svg").default}
                   className="img-fluid"
                   alt=""
                 />

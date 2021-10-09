@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import ProfilePage from "./components/mentor-profiles/ProfilePage";
-import Layout from "./components/mentorship-section/Layout";
+import CareerProfilePage from "./components/careerCounsellors-profiles/CareerProfilePage";
 import Navbar from "./components/Navbar";
 import Auth from "./Pages/Auth";
 import Collaboration from "./Pages/Collaboration";
@@ -13,11 +13,12 @@ import { useContext } from "react";
 import Services from "./Pages/Services";
 import PersonalityDev from "./Pages/PersonalityDev";
 import CareerCounselling from "./Pages/CareerCounselling";
-import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
 import Mentorship from "./Pages/Mentorship";
 //import StudentProfile from "./Pages/StudentProfile";
 //import CareerReg from "./Pages/CareerReg";
+import Entertainment from "./Pages/Entertainment";
+import StudentProfile from "./Pages/StudentProfile";
 import RegisWalker from "./Pages/RegisWalker";
 const App = () => {
   const authCtx = useContext(AuthContext);
@@ -29,7 +30,7 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path="/" exact>
-          <div style={{ fontFamily: "Lato" }}>
+          <div style={{ fontFamily: "Lato", marginTop: "80px" }}>
             <Home />
           </div>
         </Route>
@@ -53,9 +54,11 @@ const App = () => {
             <MentorProfile />
           </Route>
         )}
-        <Route path="/profile">
-          <StudentProfile />
-        </Route>
+        {type == "Student" && (
+          <Route path="/profile">
+            <StudentProfile />
+          </Route>
+        )}
         <Route path="/careers/:carId" exact>
           <CareerReg />
         </Route>
@@ -64,6 +67,15 @@ const App = () => {
         </Route>
         <Route path="/mentorship">
           <Mentorship />
+        </Route>
+        <Route path="/entertainment">
+          <Entertainment />
+        </Route>
+        <Route path="/mentorProfilePage">
+          <ProfilePage />
+        </Route>
+        <Route path="/CareerProfilePage">
+          <CareerProfilePage />
         </Route>
 
         {isLoggedin && type === "Student" && (

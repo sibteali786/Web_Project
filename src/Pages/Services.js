@@ -101,7 +101,7 @@ const Services = () => {
                     We believe in "All work and no play makes Jack a dull boy". At our platform, you'll get entertainment along with mentorship, and that way you'll never lose interest.
                   </div>
                   <Link
-                    to="/collaboration"
+                    to="/entertainment"
                     className="btn btn-outline-dark my-3"
                   >
                     Entertainment
