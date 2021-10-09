@@ -15,6 +15,8 @@ import PersonalityDev from "./Pages/PersonalityDev";
 import CareerCounselling from "./Pages/CareerCounselling";
 import CareerReg from "./Pages/CareerReg";
 import Mentorship from "./Pages/Mentorship";
+//import StudentProfile from "./Pages/StudentProfile";
+//import CareerReg from "./Pages/CareerReg";
 import Entertainment from "./Pages/Entertainment";
 import StudentProfile from "./Pages/StudentProfile";
 import RegisWalker from "./Pages/RegisWalker";

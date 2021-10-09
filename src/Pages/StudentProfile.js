@@ -1,7 +1,7 @@
 import "./StudentProfile.css";
 import { Fragment } from "react";
 import img from "../Images/student.jpg";
-import img3 from "../Images/Mentor.jpg";
+import img3 from "../Images/mentor.jpg";
 import Sess from "../components/SVGS/Sess";
 import { openPopupWidget } from "react-calendly";
 const StudentProfile = () => {
