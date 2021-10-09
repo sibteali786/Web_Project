@@ -16,8 +16,8 @@ import CareerCounselling from "./Pages/CareerCounselling";
 import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
 import Mentorship from "./Pages/Mentorship";
-import StudentProfile from "./Pages/StudentProfile";
-import CareerReg from "./Pages/CareerReg";
+//import StudentProfile from "./Pages/StudentProfile";
+//import CareerReg from "./Pages/CareerReg";
 import RegisWalker from "./Pages/RegisWalker";
 const App = () => {
   const authCtx = useContext(AuthContext);

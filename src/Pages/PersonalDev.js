@@ -2,7 +2,7 @@ import { Fragment } from "react/cjs/react.production.min";
 import "./PersonalDev.css";
 import inter from "../Images/InterPersonalSkills.jpg";
 import intra from "../Images/intrapersonalSkills.jpg";
-import bussiness from "../Imgaes/business.jpg";
+import bussiness from "../Images/business.jpg";
 import remote from "../Images/remote.jpg";
 import critical from "../Images/critical.jpg";
 import negotiation from "../Images/negotiation.jpg";

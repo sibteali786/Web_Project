@@ -1,10 +1,10 @@
 import React from "react";
-import business from "../Imgaes/socialMediaManager.jpg";
-import economics from "../Imgaes/ambassador.jpg";
-import medicine from "../Imgaes/financeDirector.webp";
-import cs from "../Imgaes/phsycologists.jpg";
-import imgTemp from "../Imgaes/careerCounsellor.jpg";
-import imgTemp2 from "../Imgaes/mentorship.jpeg";
+import business from "../Images/socialMediaManager.jpg";
+import economics from "../Images/ambassador.jpg";
+import medicine from "../Images/financeDirector.webp";
+import cs from "../Images/phsycologists.jpg";
+import imgTemp from "../Images/careerCounsellor.jpg";
+import imgTemp2 from "../Images/mentorship.jpeg";
 import "./Pictures.css";
 import { useHistory } from "react-router";
 const Pictures = () => {
