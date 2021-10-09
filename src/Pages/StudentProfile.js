@@ -3,9 +3,15 @@ import { Fragment } from "react";
 import img from "../Images/student.jpg";
 import img3 from "../Images/Mentor.jpg";
 import Sess from "../components/SVGS/Sess";
+import { openPopupWidget } from "react-calendly";
 const StudentProfile = () => {
   const activity = ["No recent activity to show"];
   const meetings = ["Monday 7:00 - 8:00"];
+  const sessHandler = () => {
+    openPopupWidget({
+      url: `https://calendly.com/"idhar gule-shaoor ka email dalna hai"`,
+    });
+  };
   return (
     <Fragment>
       <div
@@ -57,7 +63,7 @@ const StudentProfile = () => {
                 </p>
               </div>
               <div className="text-center">
-                <button className="sess-btn">
+                <button className="sess-btn" onClick={sessHandler}>
                   <Sess />
                 </button>
               </div>
@@ -84,9 +90,10 @@ const StudentProfile = () => {
               }}
             >
               <h6 className="temp text-center">Recent Activity</h6>
-              {activity.map((meeting) => {
+              {activity.map((meeting, index) => {
                 return (
                   <div
+                    key={index}
                     className="card my-1 p-1 students-2"
                     style={{ backgroundColor: "#393E46", color: "#eee" }}
                   >
@@ -104,9 +111,10 @@ const StudentProfile = () => {
               }}
             >
               <h6 className="temp text-center">Your Meetings</h6>
-              {meetings.map((meeting) => {
+              {meetings.map((meeting, index) => {
                 return (
                   <div
+                    key={index}
                     className="card my-1 p-1 meetings-2"
                     style={{ backgroundColor: "#393E46", color: "#eee" }}
                   >

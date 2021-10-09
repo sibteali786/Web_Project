@@ -8,7 +8,6 @@ import { fetchAndCompareEmail } from "../Utils/fetchers";
 import { useRef } from "react/cjs/react.development";
 const CollabForm = () => {
   const [enteredEmail, setEnteredEmail] = useState("");
-  const [enteredPassword, setEnteredPassword] = useState("");
   const [enteredPhone, setEnteredPhone] = useState("");
   const [enteredOrganization, setEnteredOrganization] = useState("");
   const [enteredCategory, setEnteredCategory] = useState(null);
@@ -52,8 +51,7 @@ const CollabForm = () => {
             method: "POST",
             body: JSON.stringify({
               email: enteredEmail,
-              password: enteredPassword,
-              username: enteredPhone,
+              phone: enteredPhone,
               type: enteredCategory,
               org: enteredOrganization,
             }),
@@ -81,10 +79,6 @@ const CollabForm = () => {
   const emailChangeHandler = (e) => {
     const val = e.target.value.trim();
     setEnteredEmail(val);
-  };
-  const passwordChangeHandler = (e) => {
-    const val = e.target.value.trim();
-    setEnteredPassword(val);
   };
   const phoneChangeHandler = (e) => {
     const val = e.target.value.trim();
@@ -148,16 +142,6 @@ const CollabForm = () => {
               ></input>
             </div>
             <div className="mb-3">
-              <label>Password</label>
-              <input
-                ref={passwordRef}
-                className="form-control"
-                type="password"
-                required
-                onChange={passwordChangeHandler}
-              ></input>
-            </div>
-            <div className="mb-3">
               <label>Phone Number</label>
               <input
                 ref={phoneRef}
@@ -167,7 +151,7 @@ const CollabForm = () => {
               ></input>
             </div>
             <div className="mb-3">
-              <label>Organization</label>
+              <label>Organization Name</label>
               <input
                 ref={orgRef}
                 className="form-control"
