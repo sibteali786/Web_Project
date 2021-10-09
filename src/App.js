@@ -13,16 +13,11 @@ import { useContext } from "react";
 import Services from "./Pages/Services";
 import PersonalityDev from "./Pages/PersonalityDev";
 import CareerCounselling from "./Pages/CareerCounselling";
-import StudentProfile from "./Pages/StudentProfile";
 import CareerReg from "./Pages/CareerReg";
 import Mentorship from "./Pages/Mentorship";
-<<<<<<< HEAD
 import Entertainment from "./Pages/Entertainment";
-=======
 import StudentProfile from "./Pages/StudentProfile";
-import CareerReg from "./Pages/CareerReg";
 import RegisWalker from "./Pages/RegisWalker";
->>>>>>> 5fde029be12953829b54e3ea34f5a0ddfe69fd7b
 const App = () => {
   const authCtx = useContext(AuthContext);
   const type = authCtx.type;

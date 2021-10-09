@@ -18,72 +18,63 @@ const Navbar = () => {
     <Fragment>
       <nav
         style={{ fontFamily: "Lato" }}
-        className={`${styles.nav} navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow`}
+        className={`${styles.nav}  fixed-top shadow`}
       >
-        <div className="container-fluid">
-          <span className="navbar-brand ms-3" href="#">
-            <img
-              src={require("../Images/final_copy.svg").default}
-              alt="logo"
-              className={`${styles.logo} img-fluid`}
-            />
-          </span>
-          x
-          <button
-            className="navbar-toggler"
-            type="button"
-            onClick={handleCollapsed}
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className={`${styles.desktopList}`}>
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/services">
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#about">
-                  About
-                </a>
-              </li>
-              {!isLoggedIn && (
-                <li className="nav-item">
-                  <Link className="nav-link" to="/auth">
-                    Log in
-                  </Link>
-                </li>
-              )}
-              <li className="nav-item">
-                {isLoggedIn && (
-                  <Link className="nav-link" to="#" onClick={logoutHandler}>
-                    Log out
-                  </Link>
-                )}
-              </li>
-            </ul>
-          </div>
+        <span className="navbar-brand ms-3">
+          <img
+            src={require("../Images/final_copy.svg").default}
+            alt="logo"
+            className={`${styles.logo} img-fluid`}
+          />
+        </span>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={handleCollapsed}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`${styles.desktopList}`}>
+          <ul className={`${styles.list} ms-auto h5`}>
+            <Link to="/">Home</Link>
+
+            <Link to="/services">Services</Link>
+
+            <a href="#about">About</a>
+
+            {!isLoggedIn && <Link to="/auth">Log in</Link>}
+
+            {isLoggedIn && (
+              <Link to="#" onClick={logoutHandler}>
+                Log out
+              </Link>
+            )}
+          </ul>
         </div>
       </nav>
       <div className={`${isCollapsed ? styles.mobileNav : styles.hidden}`}>
         <ul className={`mx-auto ${styles.listDisplay}`}>
-          <a className=" " aria-current="page" href="#home">
+          <Link aria-current="page" to="/">
             Home
-          </a>
+          </Link>
 
-          <a className="" href="#feature">
-            Features
-          </a>
+          <Link className="" to="services">
+            Services
+          </Link>
 
-          <a className="" href="#about">
+          <Link className="" href="#about">
             About
-          </a>
+          </Link>
+          {!isLoggedIn && (
+            <Link className="nav-link" to="/auth">
+              Log in
+            </Link>
+          )}
+          {isLoggedIn && (
+            <Link className="nav-link" to="#" onClick={logoutHandler}>
+              Log out
+            </Link>
+          )}
         </ul>
       </div>
     </Fragment>
